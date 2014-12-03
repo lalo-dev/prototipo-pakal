@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+	<title>Pakal</title>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" />
+	<link rel="apple-touch-icon" href="assets/img/icon57.png" sizes="57x57" />
+	<link rel="apple-touch-icon" href="assets/img/icon72.png" sizes="72x72" />
+	<link rel="apple-touch-icon" href="assets/img/icon76.png" sizes="76x76" />
+	<link rel="apple-touch-icon" href="assets/img/icon114.png" sizes="114x114" />
+	<link rel="apple-touch-icon" href="assets/img/icon120.png" sizes="120x120" />
+	<link rel="apple-touch-icon" href="assets/img/icon144.png" sizes="144x144" />
+	<link rel="apple-touch-icon" href="assets/img/icon152.png" sizes="152x152" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/plugins.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/themes.css" />
+</head>
+<body>
+	<div id="page-container" class="sidebar-full header-fixed-top">
+		<div id="sidebar">
+			<div class="sidebar-scroll">
+				<div class="sidebar-content">
+					<a href="./index.php.html" class="sidebar-brand">
+						<i class="gi gi-flash"></i><strong>Pakal</strong>
+					</a>
+					<div class="sidebar-section sidebar-user clearfix">
+						<div class="sidebar-user-avatar">
+							<a href="./page_ready_user_profile.php.html">
+								<img src="" alt="avatar" id="imgProfileSidebar" />
+							</a>
+						</div>
+						<div class="sidebar-user-name">Julio Gomez</div>
+						<div class="sidebar-user-links">
+							<a href="./page_ready_user_profile.php.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
+							<a href="./page_ready_inbox.php.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
+							<a href="#modal-user-settings" data-toggle="modal" class="enable-tooltip" data-placement="bottom" title="Settings"><i class="gi gi-cogwheel"></i></a>
+							<a href="./login.php.html" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
+						</div>
+					</div>
+
+					<ul class="sidebar-nav">
+						<li>
+							<a href="./index.php.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i>Dashboard</a>
+						</li>
+						<li class="sidebar-header">
+							<span class="sidebar-header-title">Menu</span>
+						</li>
+						<li>
+							<a href="#" class="sidebar-nav-menu">
+								<i class="fa fa-angle-left sidebar-nav-indicator"></i>
+								<i class="gi gi-certificate sidebar-nav-icon"></i>Administración
+							</a>
+							<ul>
+								<li>
+									<a href="#" class="submenu">Contratos</a>
+								</li>
+								<li>
+									<a href="#" class="submenu">Clientes</a>
+								</li>
+								<li>
+									<a href="#" class="submenu">Tipos de documentos</a>
+								</li>
+								<li>
+									<a href="#" class="submenu">Usuarios</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="sidebar-nav-menu">
+								<i class="fa fa-angle-left sidebar-nav-indicator"></i>
+								<i class="gi gi-book_open sidebar-nav-icon"></i>Consulta
+							</a>
+							<ul>
+								<li>
+									<a href="#" class="submenu">Asignaciones</a>
+								</li>
+								<li>
+									<a href="#" class="submenu">Contratos</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="sidebar-header">
+						<span class="sidebar-header-options clearfix">
+							<a href="javascript:void(0)" data-toggle="tooltip" title="Refresh"><i class="gi gi-refresh"></i></a>
+						</span>
+						<span class="sidebar-header-title">Actividad</span>
+					</div>
+					<div class="sidebar-section">
+						<div class="alert alert-success alert-alt">
+							<small>5 min ago</small><br />
+							<i class="fa fa-thumbs-up fa-fw"></i> Alerta completado
+						</div>
+						<div class="alert alert-info alert-alt">
+							<small>10 min ago</small><br />
+							<i class="fa fa-exclamation fa-fw"></i> Alerta informativo
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-container">
+			<header class="navbar navbar-inverse navbar-fixed-top">
+				<ul class="nav navbar-nav-custom" style="width: 90%;">
+					<li class="hidden-xs hidden-sm">
+						<a href="javascript:void(0)" id="sidebar-toggle-lg">
+							<i class="fa fa-list-ul fa-fw"></i>
+						</a>
+					</li>
+					<li class="hidden-md hidden-lg">
+						<a href="javascript:void(0)" id="sidebar-toggle-sm">
+							<i class="fa fa-bars fa-fw"></i>
+						</a>
+					</li>
+					<li class="hidden-md hidden-lg">
+						<a href="./index.php.html">
+							<i class="gi gi-stopwatch fa-fw"></i>
+						</a>
+					</li>
+					<li style="width: 90%; height: 50px; padding-left: 50px; color: white; text-align: center;">
+						<p style="font-size: 35px;">Empresa cliente</p>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav-custom pull-right">
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="" alt="avatar" id="imgProfileNavbar" /> <i class="fa fa-angle-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+							<li class="dropdown-header text-center">Cuenta</li>
+							<li>
+								<a href="./page_ready_timeline.php.html">
+									<i class="fa fa-clock-o fa-fw pull-right"></i>
+									<span class="badge pull-right">10</span>
+									Pendientes
+								</a>
+								<a href="./page_ready_inbox.php.html">
+									<i class="fa fa-envelope-o fa-fw pull-right"></i>
+									<span class="badge pull-right">5</span>
+									Mensajes
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="./page_ready_user_profile.php.html">
+									<i class="fa fa-user fa-fw pull-right"></i>
+									Perfil
+								</a>
+								<a href="#modal-user-settings" data-toggle="modal">
+									<i class="fa fa-cog fa-fw pull-right"></i>
+									Ajustes
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="./login.php.html"><i class="fa fa-ban fa-fw pull-right"></i> Salir</a>
+							</li>
+							<li class="dropdown-header text-center">Activity</li>
+							<li>
+								<div class="alert alert-success alert-alt">
+									<small>5 min ago</small><br />
+									<i class="fa fa-thumbs-up fa-fw"></i> Alerta completado
+								</div>
+								<div class="alert alert-info alert-alt">
+									<small>10 min ago</small><br />
+									<i class="fa fa-exclamation fa-fw"></i> Alerta informativo
+								</div>
+								<div class="alert alert-warning alert-alt">
+									<small>3 hours ago</small><br />
+									<i class="fa fa-umbrella fa-fw"></i> Alerta advertencia
+								</div>
+								<div class="alert alert-danger alert-alt">
+									<small>Yesterday</small><br />
+									<i class="fa fa-bug fa-fw"></i> Alerta peligro
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</header>
+			<div id="page-content">
+				<div class="content-header">
+					<div class="header-section">
+						<h1>
+							<i class="gi gi-dashboard"> - Logo</i>Clientes<br /><small>Administración de clientes</small>
+						</h1>
+					</div>
+				</div>
+				<ul class="breadcrumb breadcrumb-top">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Administración</a></li>
+					<li>Clientes</li>
+				</ul>
+
+				<div id="content">
+					<h1>contenido</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section JS -->
+	<script src="assets/js/vendor/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<script src="assets/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/general.js"></script>
+	<script src="assets/js/md5-min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			//Imagen GRAVATAR
+			var rand = Math.floor((Math.random()*1234567890987654321)+1);
+			var mail = hex_md5(rand + "@mail.com");
+			var gravatar = "http://www.gravatar.com/avatar/"+ mail +"?s=64&r=pg&d=identicon";
+			$('#imgProfileSidebar, #imgProfileNavbar').attr('src', gravatar);
+
+
+			app.navegarA({buttons:[
+				{
+					idComponente:'adm_clientes',
+					url:'src/clientes',
+					breadcrumb:['Inicio','Administración','Clientes']
+				},
+				{
+					idComponente:'adm_usuarios',
+					url:'src/usuarios',
+					breadcrumb:['Inicio','Administración','Usuarios']
+				},
+				{
+					idComponente:'adm_tipos_doc',
+					url:'src/tipos_documentos',
+					breadcrumb:['Inicio','Administración','Tipos de documentos']
+				},
+				{
+					idComponente:'adm_contratos',
+					url:'src/contratos',
+					breadcrumb:['Inicio','Administración','Contratos']
+				}
+			]});
+
+			//Mostrar que link del menu esta activo
+			$('.submenu').on('click',function(){
+				$('.sidebar-nav').find('li, a').removeClass('active open');
+				$('.sidebar-nav').find('ul').css({ display: 'none' });
+				$(this).addClass('active');
+				$(this).parent().parent().parent().addClass('active');
+				$(this).parent().parent().css({ display: 'block' });
+			});
+		});
+
+	</script>
+	<!-- End Section JS -->
+</body>
+</html>

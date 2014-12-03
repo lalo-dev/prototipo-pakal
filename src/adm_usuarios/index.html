@@ -1,0 +1,571 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Usuarios<br /><small>Administración de usuarios</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li>Administración de usuarios</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Lista de usuarios</strong></h2>
+		</div>
+		<div class="table-options clearfix">
+			<div class="row">
+				<div class="col-xs-2 col-sm-1 col-sm-offset-2">
+					<a href="javascript: goToForm();" class="btn btn-sm btn-alt btn-primary"><i class="fa fa-plus"></i> Crear</a>
+				</div>
+				<div class="col-xs-7 col-sm-6">
+					<div class="input-group" style="padding-left: 10px;">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+						<input type="text" id="example-input1-group1" name="example-input1-group1" class="form-control input-sm" placeholder="Filtro de búsqueda" />
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-2 text-right">
+					<button class="btn btn-sm btn-alt btn-primary"><i class="gi gi-refresh"></i> Recargar</button>
+				</div>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+				<thead>
+					<tr>
+						<th>Usuario</th>
+						<th>Nombre</th>
+						<th>Apellido Paterno</th>
+						<th>Apellido Materno</th>
+						<th>E-mail</th>
+						<th>Cliente</th>
+						<th class="text-center">Detalle</th>
+						<th class="text-center">Estatus</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>[usuario 1]</td>
+						<td>[Nombre]</td>
+						<td>[Apellido paterno]</td>
+						<td>[Apellido materno]</td>
+						<td>[E-mail]</td>
+						<td>[Cliente]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[usuario 2]</td>
+						<td>[Nombre]</td>
+						<td>[Apellido paterno]</td>
+						<td>[Apellido materno]</td>
+						<td>[E-mail]</td>
+						<td>[Cliente]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[usuario 3]</td>
+						<td>[Nombre]</td>
+						<td>[Apellido paterno]</td>
+						<td>[Apellido materno]</td>
+						<td>[E-mail]</td>
+						<td>[Cliente]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[usuario 4]</td>
+						<td>[Nombre]</td>
+						<td>[Apellido paterno]</td>
+						<td>[Apellido materno]</td>
+						<td>[E-mail]</td>
+						<td>[Cliente]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="section_form" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Crear / Editar]<strong> Usuarios</strong></h2>
+		</div>
+		<form class="form-horizontal" onsubmit="return false;">
+			<div class="form-group col-sm-4 has-error">
+				<label class="col-md-5 control-label" for="ex">Usuario</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el usuario" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Contraseña</label>
+				<div class="col-md-7">
+					<input type="password" id="ex" name="ex" class="form-control" placeholder="Introduce la contraseña" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Confirmar contraseña</label>
+				<div class="col-md-7">
+					<input type="password" id="ex" name="ex" class="form-control" placeholder="Confirma contraseña" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Buscar contacto</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="buscar ....." />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Nombre</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el nombre" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Apellido paterno</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el apellido" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Apellido materno</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el apellido" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">E-mail</label>
+				<div class="col-md-7">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce un e-mail" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Rol</label>
+				<div class="col-md-7">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">Option #1</option>
+						<option value="2">Option #2</option>
+						<option value="3">Option #3</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Cliente</label>
+				<div class="col-md-7">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">Option #1</option>
+						<option value="2">Option #2</option>
+						<option value="3">Option #3</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label" for="ex">Expeiencia</label>
+				<div class="col-md-7">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">1 - 5</option>
+						<option value="2">5 - 10</option>
+						<option value="3">10 - Adelante</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<div class="block-options pull-right">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('habilidad');">
+								<i class="fa fa fa-arrows-v"></i>
+							</a>
+						</div>
+						<h2>[Crear / Editar]<strong> Habilidad</strong></h2>
+					</div>
+					<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+					<div id="habilidad_content" style="display: none">
+						<div class="form-group col-md-12">
+							<label class="col-md-3 control-label" for="example-hf-password">Habilidad</label>
+							<div class="col-md-8">
+								<select id="ex" name="ex" class="form-control" size="1">
+									<option value="0">Seleccione una habilidad</option>
+									<option value="1">[Descripción de la habilidad ---------- A]</option>
+									<option value="2">[Descripción de la habilidad ---------- B]</option>
+									<option value="3">[Descripción de la habilidad ---------- C]</option>
+									<option value="4">[Descripción de la habilidad ---------- D]</option>
+								</select>
+							</div>
+							<div class="col-md-1">
+								<a href="javascript:void(0)" data-toggle="tooltip" title="Agregar" class="btn btn-alt btn-sm btn-success">
+									<i class="gi gi-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="form-group form-actions">
+							<div class="row">&nbsp;</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Habilidad</th>
+											<th class="text-center">Borrar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Descripción de la habilidad ------------------------------------------- A]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la habilidad ------------------------------------------- B]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la habilidad ------------------------------------------- C]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la habilidad ------------------------------------------- D]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<div class="block-options pull-right">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('rubro');">
+								<i class="fa fa fa-arrows-v"></i>
+							</a>
+						</div>
+						<h2>[Crear / Editar]<strong> Rubro</strong></h2>
+					</div>
+					<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+					<div id="rubro_content" style="display: none">
+						<div class="form-group col-md-12">
+							<label class="col-md-3 control-label" for="example-hf-password">Rubro</label>
+							<div class="col-md-8">
+								<input type="text" class="form-control" placeholder="Introduce un rubro">
+							</div>
+							<div class="col-md-1">
+								<a href="javascript:void(0)" data-toggle="tooltip" title="Agregar" class="btn btn-alt btn-sm btn-success">
+									<i class="gi gi-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="form-group form-actions">
+							<div class="row">&nbsp;</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Rubro</th>
+											<th class="text-center">Borrar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Descripción de la rubro -------------------------------------------]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la rubro -------------------------------------------]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la rubro -------------------------------------------]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>[Descripción de la rubro -------------------------------------------]</td>
+											<td class="text-center">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<div class="block-options pull-right">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('competencia');">
+								<i class="fa fa fa-arrows-v"></i>
+							</a>
+						</div>
+						<h2>[Crear / Editar]<strong> Competencia técnica</strong></h2>
+					</div>
+					<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+					<div id="competencia_content" style="display: none">
+						<div class="form-group col-md-12">
+							<label class="col-md-3 control-label" for="example-hf-password">Rubro</label>
+							<div class="col-md-8">
+								<select id="ex" name="ex" class="form-control">
+									<option value="0">Seleccione</option>
+									<option value="1">Rubro ------------ A</option>
+									<option value="2">Rubro ------------ B</option>
+									<option value="3">Rubro ------------ C</option>
+									<option value="4">Rubro ------------ D</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-md-12">
+							<label class="col-md-3 control-label" for="example-hf-password">Competencia técnica</label>
+							<div class="col-md-8">
+								<input type="text" class="form-control" placeholder="Introduce la competencia técnica">
+							</div>
+							<div class="col-md-1">
+								<a href="javascript:void(0)" data-toggle="tooltip" title="Agregar" class="btn btn-alt btn-sm btn-success">
+									<i class="gi gi-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="form-group form-actions">
+							<div class="row">&nbsp;</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Rubro</th>
+											<th>Competencia</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<p>
+													<i class="gi gi-cardio text-primary"></i> 
+													[Descripción de la rubro A -------------------------------------------]
+												</p>
+											</td>
+											<td>
+												<ul class="fa-ul">
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 01 ---------------------------------------]
+													</li>
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 02 ---------------------------------------]
+													</li>
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 03 ---------------------------------------]
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													<i class="gi gi-cardio text-primary"></i> 
+													[Descripción de la rubro B -------------------------------------------]
+												</p>
+											</td>
+											<td>
+												<ul class="fa-ul">
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 01 ---------------------------------------]
+													</li>
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 02 ---------------------------------------]
+													</li>
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 03 ---------------------------------------]
+													</li>
+													<li>
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Borrar" class="btn btn-alt btn-sm btn-danger"><i class="gi gi-bin"></i></a>
+														[Competencia 04 ---------------------------------------]
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+					<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="section_detail" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Detalle]<strong> Usuario</strong></h2>
+		</div>
+		<form class="form-horizontal" onsubmit="return false;">
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Usuario</label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[Usuario]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label"><strong>Contraseña</strong></label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[contraseña]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Nombre</label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[nombre]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label"><strong>Apellido paterno</strong></label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[apellido paterno]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label"><strong>Apellido materno</strong></label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[apellido materno]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label"><strong>E-mail</strong></label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[email@email.com]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label"><strong>Rol</strong></label>
+				<div class="col-md-7">
+					<label class="control-label text-info text-bold">[Rol del usuario]</label>
+				</div>
+			</div>
+
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<a href="javascript: goToForm();" class="btn btn-alt btn-sm btn-primary">
+						<i class="fa fa-pencil"></i> Editar
+					</a>
+					<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Section JS of admin usuarios -->
+<script>
+	function toogleSection(section) {
+		$('#' + section + '_content').toggle('slow');
+	}
+
+	function goToForm() {
+		$('.section_form').show();
+		$('.section_detail').hide();
+		$(window).scrollTop($('.section_form').position().top-50);
+	}
+
+	function goToGeneral() {
+		$('.section_detail').hide();
+		$('.section_form').hide();
+		//$('.section_list').show();
+	}
+
+	function goToDetail() {
+		$('.section_detail').show();
+		$('.section_form').hide();
+		$(window).scrollTop($('.section_detail').position().top-50);
+	}
+</script>
+<!-- End -->

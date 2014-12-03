@@ -1,0 +1,702 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Registrar trazabilidad del contrato<br /><small>Antecedentes del contrato</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpAc">Administrar CCP</a></li>
+	<li><a href="#" id="antecedentesAc">Antecedentes del contrato</a></li>
+	<li>Registrar trazabilidad del contrato</li>
+</ul>
+
+<div class="section_detail">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Nombre del Cliente]</h2>
+			<br>
+			<h2>[Nombre del Contrato]</h2>
+		</div>
+		<br>
+		
+		<div class="col-sm-12" style="border: solid 1px lightblue">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							6
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('objetivos');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Objetivos/Metas Generales</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="objetivos_content" style="display: none">
+					<div class="form-group col-md-8">
+						<label class="col-md-3 control-label" for="example-hf-password">Objetivo/meta general</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el objetivo/meta" />
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-3 control-label" for="example-hf-password">Tipo</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Objetivo</option>
+								<option value="1">Meta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="table-responsive">
+									<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Objetivos generales</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Objetivo general registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo general registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo general registrado en el sistema 03]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo general registrado en el sistema 04]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Metas generales</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Meta general registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Meta general registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+									</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							6
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('metas');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Objetivos/Metas Especificos</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="metas_content" style="display: none">
+					<div class="form-group col-md-8">
+						<label class="col-md-3 control-label" for="example-hf-password">Objetivo/meta especifico</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el objetivo/meta" />
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-3 control-label" for="example-hf-password">Tipo</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Objetivo</option>
+								<option value="1">Meta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="table-responsive">
+									<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Objetivos especificos</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Objetivo especifico registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo especifico registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo especifico registrado en el sistema 03]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Objetivo especifico registrado en el sistema 04]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Metas especificas</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Meta especifica registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Meta especifica registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+									</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							4
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('beneficio');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Beneficios</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="beneficio_content" style="display: none">
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Beneficio</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el beneficio" />
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">							
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Beneficios</th>
+											<th class="text-center">Eliminar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Beneficio registrado en el sistema 01]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[Beneficio registrado en el sistema 02]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[Beneficio registrado en el sistema 03]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[Beneficio registrado en el sistema 04]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							6
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('sla');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> SLA's/OLA's</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="sla_content" style="display: none">
+					<div class="form-group col-md-8">
+						<label class="col-md-3 control-label" for="example-hf-password">SLA/OLA</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el SLA/OLA" />
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-3 control-label" for="example-hf-password">Tipo</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">SLA</option>
+								<option value="1">OLA</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="table-responsive">
+									<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>SLA's</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[SLA registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[SLA registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[SLA registrado en el sistema 03]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[SLA registrado en el sistema 04]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>OLA's</th>
+												<th class="text-center">Eliminar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[OLA registrado en el sistema 01]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[OLA registrado en el sistema 02]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+									</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							9
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:toogleSection('productos');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Productos/Entregables</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="productos_content" style="display: none">
+					<div class="row">
+						<div class="form-group col-md-8">
+							<label class="col-md-3 control-label" for="example-hf-password">Producto/Entregable</label>
+							<div class="col-md-9">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el producto/entregable" />
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label class="col-md-3 control-label" for="example-hf-password">Tipo</label>
+							<div class="col-md-9">
+								<select id="example-select" name="example-select" class="form-control" size="1">
+									<option value="0">Producto</option>
+									<option value="1">Entregable</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4">
+							<label class="col-md-6 control-label" for="ex">Fecha de entrega</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy" />
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label class="col-md-6 control-label" for="ex">Periodicidad</label>
+							<div class="col-md-6">
+								<select class="form-control" size="1">
+									<option value="0">Semanal</option>
+									<option value="1">Quincenal</option>
+									<option value="1">Mensaul</option>
+									<option value="1">Bimestral</option>
+									<option value="1">Semestral</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label class="col-md-3 control-label" for="ex">Inicio - Fin</label>
+							<div class="col-md-9">
+								<div class="input-group input-daterange" data-date-format="mm/dd/yyyy">
+									<input type="text" id="example-daterange1" name="example-daterange1" class="form-control text-center" placeholder="From">
+									<span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
+									<input type="text" id="example-daterange2" name="example-daterange2" class="form-control text-center" placeholder="To">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="table-responsive">
+							<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+								<thead>
+									<tr>
+										<th style="width: 40%;">Productos</th>
+										<th style="width: 20%;">Fecha de entrega</th>
+										<th style="width: 15%;">Periodicidad</th>
+										<th style="width: 20%;">Inicio - Fin</th>
+										<th class="text-center" style="width: 5%;">Eliminar</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>[Producto registrado en el sistema 01]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Producto registrado en el sistema 02]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Producto registrado en el sistema 03]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Producto registrado en el sistema 04]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Producto registrado en el sistema 05]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="table-responsive">
+							<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+								<thead>
+									<tr>
+										<th style="width: 40%;">Entregables</th>
+										<th style="width: 20%;">Fecha de entrega</th>
+										<th style="width: 15%;">Periodicidad</th>
+										<th style="width: 20%;">Inicio - Fin</th>
+										<th class="text-center" style="width: 5%;">Eliminar</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>[Entregable registrado en el sistema 01]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Entregable registrado en el sistema 02]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Entregable registrado en el sistema 03]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Entregable registrado en el sistema 04]</td>
+										<td>12-12-2014</td>
+										<td>Bimestral</td>
+										<td>01-01-2015 / 01-01-2016</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="row">
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<a id="regresar" style="cursor: pointer;" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+
+<!-- Section JS of trazabilidad contrato -->
+<script>
+$(document).ready(function(){
+
+	$('#homeSubproceso').val('').val('section_planeacion');
+	$('#homeTask').val('').val('tasks_04');
+
+	function toogleSection(section) {
+		$('#' + section + '_content').toggle('slow');
+	}
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpAc',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'antecedentesAc',
+			url:'src/antecedentes'
+		},
+		{
+			idComponente:'regresar',
+			url:'src/antecedentes'
+		}
+	]});
+
+});
+</script>
+<!-- End -->

@@ -1,0 +1,2904 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Administrar CCP<br /><small>Clientes - Contratos - Proyectos</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li>Administrar CCP</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Clientes - Contratos - Proyectos</strong></h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="block" style="min-height: 300px;">
+					<div class="block-title">
+						<div class="block-options pull-left">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total">
+								4
+							</a>
+						</div>
+						<div class="block-options pull-right">
+							<a href="javascript: app.mostrar('subsection','form_customer','yes')" class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Agregar">
+								<i class="fa fa fa-plus"></i>
+							</a>
+						</div>
+						<h4>Clientes</h4>
+					</div>
+					<div class="table-responsive">
+						<table id="tblClientes" class="table table-vcenter table-condensed table-borderless table-hover">
+							<tbody>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_customer','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_customer','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)" onclick="$('#tblContratos,#totalContratos,#agregarContrato').show();">[Nombre cliente 01]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: mostrar('subsection','detail_customer','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: mostrar('subsection','form_customer','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)">[Nombre cliente 02]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: mostrar('subsection','detail_customer','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: mostrar('subsection','form_customer','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)">[Nombre cliente 03]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: mostrar('subsection','detail_customer','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: mostrar('subsection','form_customer','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)">[Nombre cliente 04]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" /><span></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="block" style="min-height: 300px;">
+					<div class="block-title">
+						<div id="totalContratos" class="block-options pull-left" style="display: none;">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total">
+								3
+							</a>
+						</div>
+						<div id="agregarContrato" class="block-options pull-right" style="display: none;">
+							<a href="javascript: app.mostrar('subsection','form_contract','yes')" class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Agregar">
+								<i class="fa fa fa-plus"></i>
+							</a>
+						</div>
+						<h4>Contratos</h4>
+					</div>
+					<div class="table-responsive">
+						<table id="tblContratos" class="table table-vcenter table-condensed table-borderless table-hover" style="display: none;">
+							<tbody>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a id="irAntecedentes" style="cursor: pointer;">
+															<i class="fa fa-folder pull-right"></i>Antecedentes
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)" onclick="$('#tblProyectos,#totalProyectos,#agregarProyecto').show();">[Nombre contrato 01]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-folder pull-right"></i>Antecedentes</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)">[Nombre contrato 02]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-folder pull-right"></i>Antecedentes</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span><a href="javascript:void(0)">[Nombre contrato 03]</a></span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" /><span></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="block" style="min-height: 300px;">
+					<div class="block-title">
+						<div id="totalProyectos" class="block-options pull-left" style="display: none;">
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total">
+								5
+							</a>
+						</div>
+						<div id="agregarProyecto" class="block-options pull-right" style="display: none;">
+							<a href="javascript: app.mostrar('subsection','form_project','yes')" class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Agregar">
+								<i class="fa fa fa-plus"></i>
+							</a>
+						</div>
+						<h4>Proyectos</h4>
+					</div>
+					<div class="table-responsive">
+						<table id="tblProyectos" class="table table-vcenter table-condensed table-borderless table-hover" style="display: none;">
+							<tbody>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_project','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_project','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a id="irAntecedentesp" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Antecedentes
+														</a>
+														<a id="irRoadmap" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Supervisión
+														</a>
+														<a id="irAseguramiento" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Aseguramiento
+														</a>
+														<a id="irInventario" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Inventario
+														</a>
+														<a id="irValidaciones" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Validaciones
+														</a>
+														<a id="irTablero" style="cursor: pointer;">
+															<i class="fa fa-sitemap pull-right"></i>Tablero de semáforos
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="text-primary">[Nombre proyecto 01]</span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_project','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_project','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-sitemap pull-right"></i>Roadmap</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="text-primary">[Nombre proyecto 02]</span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_project','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_project','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-sitemap pull-right"></i>Roadmap</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="text-primary">[Nombre proyecto 03]</span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_project','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_project','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-sitemap pull-right"></i>Roadmap</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="text-primary">[Nombre proyecto 04]</span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-custom">
+													<li>
+														<a href="javascript: app.mostrar('subsection','detail_project','yes')">
+															<i class="fa fa-eye pull-right"></i>Detalle
+														</a>
+														<a href="javascript: app.mostrar('subsection','form_project','yes')">
+															<i class="fa fa-pencil pull-right"></i>Editar
+														</a>
+													</li>
+													<li class="divider"></li>
+													<li>
+														<a href="javascript:void(0)"><i class="fa fa-sitemap pull-right"></i>Roadmap</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="text-primary">[Nombre proyecto 05]</span>
+									</td>
+									<td>
+										<label class="switch switch-primary">
+											<input type="checkbox" checked="" /><span></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="actions">
+	<div class="section_form">
+		<div class="form_customer subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Cliente</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4 has-error">
+						<label class="col-md-3 control-label" for="example-hf-email">Nombre</label>
+						<div class="col-md-9">
+							<input type="email" id="example-hf-email" name="example-hf-email" class="form-control" placeholder="Nombre cliente" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-3 control-label" for="example-hf-password">R.F.C.</label>
+						<div class="col-md-9">
+							<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="R.F.C." />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-3 control-label" for="example-hf-password">Razon Social</label>
+						<div class="col-md-9">
+							<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Razon Social" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-3 control-label" for="example-hf-password">Giro</label>
+						<div class="col-md-9">
+							<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce el giro" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-3 control-label" for="example-hf-password">URL</label>
+						<div class="col-md-9">
+							<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Pagína web" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-3 control-label">Notas</label>
+						<div class="col-md-9">
+							<textarea class="form-control"></textarea>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('areas1');">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Áreas</strong></h2>
+							</div>
+							<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+							<div id="areas1_content" style="display: none">
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Buscar</label>
+									<div class="col-md-9">
+										<input type="text" id="ex" name="ex" class="form-control" placeholder="Buscar área" />
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Nombre</label>
+									<div class="col-md-9">
+										<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el nombre" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label">Comentario</label>
+									<div class="col-md-9">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Área</th>
+													<th>Comentario</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[Recursos humanos]</td>
+													<td>[Área encargada de todo lo relacionado al capital humano de la empresa]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Finanzas]</td>
+													<td>[Área encargada del $ de la empresa]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('phones1');">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Telefonos</strong></h2>
+							</div>
+							<!-- Section Phones //////////////////////////////////////////////////////////////////////////// -->
+							<div id="phones1_content" style="display: none">
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Telefono</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un telefono" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Extenciones</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce las extenciones" />
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label">Tipo</label>
+									<div class="col-md-9">
+										<select id="example-select" name="example-select" class="form-control" size="1">
+											<option value="0">Seleccione un tipo</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Telefono</th>
+													<th>Extenciones</th>
+													<th>Tipo</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>5512121212</td>
+													<td>2345, 5423, 1223</td>
+													<td>Oficina</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>5512121212</td>
+													<td>2345, 5423, 1223</td>
+													<td>Oficina</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('address1')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Direcciones</strong></h2>
+							</div>
+							<!-- Section Address //////////////////////////////////////////////////////////////////////////// -->
+							<div id="address1_content" style="display: none">
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Calle y numero</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce calle y numero" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Colonia</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce colonia" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Delegación / Municipio</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce delegación" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Ciudad / Población</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce ciudad" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label">Estado</label>
+									<div class="col-md-9">
+										<select id="example-select" name="example-select" class="form-control" size="1">
+											<option value="0">Seleccione un tipo</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label">Pais</label>
+									<div class="col-md-9">
+										<select id="example-select" name="example-select" class="form-control" size="1">
+											<option value="0">Seleccione un tipo</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-4">
+									<label class="col-md-3 control-label" for="example-hf-password">Codigo Postal</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce C.P." />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Calle y número</th>
+													<th>Colonia</th>
+													<th>Delegación / Municipio</th>
+													<th>Ciudad / Población</th>
+													<th>Estado</th>
+													<th>País</th>
+													<th>C.P.</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[calle]</td>
+													<td>[colonia]</td>
+													<td>[delegación]</td>
+													<td>[ciudad]</td>
+													<td>[estado]</td>
+													<td>[país]</td>
+													<td>[c.p.]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[calle]</td>
+													<td>[colonia]</td>
+													<td>[delegación]</td>
+													<td>[ciudad]</td>
+													<td>[estado]</td>
+													<td>[país]</td>
+													<td>[c.p.]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[calle]</td>
+													<td>[colonia]</td>
+													<td>[delegación]</td>
+													<td>[ciudad]</td>
+													<td>[estado]</td>
+													<td>[país]</td>
+													<td>[c.p.]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('contactsCustomer')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contactos</strong></h2>
+							</div>
+							<div id="contactsCustomer_content" style="display: none">
+								<div class="form-group col-sm-12">
+									<label class="col-md-3 control-label" for="example-hf-password">Buscar</label>
+									<div class="col-md-7">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Buscar contacto" />
+									</div>
+									<div class="col-md-2">
+										<a class="btn btn-alt btn-sm btn-success" data-toggle="tooltip" title="Agregar" onclick="javascript:app.toogleSection('datosCustomer')">
+											<i class="fa fa-plus"></i>
+										</a>
+										<a class="btn btn-alt btn-sm btn-primary" data-toggle="tooltip" title="Crear">
+											<i class="fa fa-plus-square"></i>
+										</a>
+									</div>
+								</div>
+								
+								<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+									<br>
+									<fieldset>
+										<div class="block-title">
+											<div class="block-options pull-right">
+												<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('datosCustomer')">
+													<i class="fa fa fa-arrows-v"></i>
+												</a>
+											</div>
+											<h2>[Crear / Editar]<strong> Datos generales contacto</strong></h2>
+										</div>
+										<div id="datosCustomer_content" style="display: none">
+
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Nombre</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce nombre" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Apellido paterno</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce apellido paterno" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Apellido materno</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce apellido materno" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Puesto</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce puesto" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+
+								<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+									<br>
+									<fieldset>
+										<div class="block-title">
+											<div class="block-options pull-right">
+												<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('emailsCustomer')">
+													<i class="fa fa fa-arrows-v"></i>
+												</a>
+											</div>
+											<h2>[Crear / Editar]<strong> E-mail(s) / Telefono(s)</strong></h2>
+										</div>
+										<div id="emailsCustomer_content" style="display: none">
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label">E-mail / Telefono</label>
+												<div class="col-md-9">
+													<select id="example-select" name="example-select" class="form-control" size="1">
+														<option value="0">Seleccione</option>
+														<option value="1">E-mail</option>
+														<option value="2">Telefono</option>
+													</select>
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">E-mail</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un e-mail" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Telefono</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un telefono" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Extenciones</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce las extenciones" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label">Tipo</label>
+												<div class="col-md-9">
+													<select id="example-select" name="example-select" class="form-control" size="1">
+														<option value="0">Seleccione un tipo</option>
+														<option value="1">Empresa</option>
+														<option value="2">Oficina</option>
+													</select>
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group form-actions">
+												<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+													<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+													<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+												</div>
+												<div class="row">&nbsp;</div>
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="table-responsive" style="border-top: solid 1px lightblue;">
+															<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+																<thead>
+																	<tr>
+																		<th>E-mail</th>
+																		<th class="text-center">Editar</th>
+																		<th class="text-center">Eliminar</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>conseti@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>brio@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>pakal@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="table-responsive" style="border-top: solid 1px lightblue;">
+															<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+																<thead>
+																	<tr>
+																		<th>Telefono</th>
+																		<th>Extención</th>
+																		<th>Tipo</th>
+																		<th class="text-center">Editar</th>
+																		<th class="text-center">Eliminar</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>5522121212</td>
+																		<td>2211</td>
+																		<td>Empresa</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5522121212</td>
+																		<td>2211</td>
+																		<td>Oficina</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Nombre</th>
+													<th>Apellido paterno</th>
+													<th>Apellido materno</th>
+													<th>Puesto</th>
+													<th>E-mails</th>
+													<th>Telefonos</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Alfredo</td>
+													<td>Solis</td>
+													<td>Alfaro</td>
+													<td>Recursos Humanos</td>
+													<td>
+														<p>rh@cliente.com</p>
+														<p>personal@correo.com</p>
+													</td>
+													<td>
+														<p>5512121212 -/- 1290 -/- Oficina</p>
+														<p>5512121212 -/- 2900 -/- Empresa</p>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>Eduardo</td>
+													<td>Martínez</td>
+													<td>Martínez</td>
+													<td>Sistemas</td>
+													<td>
+														<p>personal@mail.com</p>
+														<p>oficina@mail.com</p>
+													</td>
+													<td>
+														<p>5598653426 -/- 6767 -/- Oficina</p>
+														<p>5598760012 -/- 2323 -/- Empresa</p>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+		<div class="form_contract subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Contrato</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4 has-error">
+						<label class="col-md-5 control-label" for="ex">Nombre</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el nombre" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Cliente</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Fecha de inicio</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control input-datepicker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Fecha de fin</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control input-datepicker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Estatus</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Activo</option>
+								<option value="1">Inactivo</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Duración</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce la duración" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Monto</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el monto" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Director responsable</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Gerente responsable</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Director cliente</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Administrador cliente</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Tipo de servicio</label>
+						<div class="col-md-7">
+							<select id="ex" name="ex" class="form-control" size="1">
+								<option value="0">Seleccione</option>
+								<option value="1">Option #1</option>
+								<option value="2">Option #2</option>
+								<option value="3">Option #3</option>
+							</select>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Descripción</label>
+						<div class="col-md-7">
+							<textarea class="form-control"></textarea>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('contractingContract');">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contratantes</strong></h2>
+							</div>
+							<!-- Section contracting //////////////////////////////////////////////////////////////////////////// -->
+							<div id="contractingContract_content" style="display: none">
+								<div class="form-group col-sm-10 col-sm-offset-2">
+									<label class="col-md-3 control-label" for="example-hf-password">Buscar área</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un contratante" />
+										<span class="help-block">Busqueda de áreas</span>
+									</div>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Contratante</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[Contratante .................................................................. 01]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratante .................................................................. 02]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratante .................................................................. 03]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('contractedContract')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contratados</strong></h2>
+							</div>
+							<!-- Section contracted  //////////////////////////////////////////////////////////////////////////// -->
+							<div id="contractedContract_content" style="display: none">
+								<div class="form-group col-sm-10 col-sm-offset2">
+									<label class="col-md-3 control-label" for="example-hf-password">Buscar proveedor</label>
+									<div class="col-md-9">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un contratado" />
+										<span class="help-block">Busqueda de proveedores</span>
+									</div>
+								</div>
+
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Contratado</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[Contratado ............................................................ 01]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 02]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 03]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 04]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('contactsContract')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contactos</strong></h2>
+							</div>
+							<div id="contactsContract_content" style="display: none">
+								<div class="form-group col-sm-12">
+									<label class="col-md-3 control-label" for="example-hf-password">Buscar</label>
+									<div class="col-md-7">
+										<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Buscar contacto" />
+									</div>
+									<div class="col-md-2">
+										<a class="btn btn-alt btn-sm btn-success" data-toggle="tooltip" title="Agregar" onclick="javascript:app.toogleSection('datosContract')">
+											<i class="fa fa-plus"></i>
+										</a>
+										<a class="btn btn-alt btn-sm btn-primary" data-toggle="tooltip" title="Crear">
+											<i class="fa fa-plus-square"></i>
+										</a>
+									</div>
+								</div>
+								
+								<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+									<br>
+									<fieldset>
+										<div class="block-title">
+											<div class="block-options pull-right">
+												<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('datosContract')">
+													<i class="fa fa fa-arrows-v"></i>
+												</a>
+											</div>
+											<h2>[Crear / Editar]<strong> Datos generales contacto</strong></h2>
+										</div>
+										<div id="datosContract_content" style="display: none">
+
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Nombre</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce nombre" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Apellido paterno</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce apellido paterno" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Apellido materno</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce apellido materno" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Puesto</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce puesto" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+
+								<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+									<br>
+									<fieldset>
+										<div class="block-title">
+											<div class="block-options pull-right">
+												<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('emailsContract')">
+													<i class="fa fa fa-arrows-v"></i>
+												</a>
+											</div>
+											<h2>[Crear / Editar]<strong> E-mail(s) / Telefono(s)</strong></h2>
+										</div>
+										<div id="emailsContract_content" style="display: none">
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label">E-mail / Telefono</label>
+												<div class="col-md-9">
+													<select id="example-select" name="example-select" class="form-control" size="1">
+														<option value="0">Seleccione</option>
+														<option value="1">E-mail</option>
+														<option value="2">Telefono</option>
+													</select>
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">E-mail</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un e-mail" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Telefono</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce un telefono" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label" for="example-hf-password">Extenciones</label>
+												<div class="col-md-9">
+													<input type="text" id="example-hf-password" name="example-hf-password" class="form-control" placeholder="Introduce las extenciones" />
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group col-sm-4">
+												<label class="col-md-3 control-label">Tipo</label>
+												<div class="col-md-9">
+													<select id="example-select" name="example-select" class="form-control" size="1">
+														<option value="0">Seleccione un tipo</option>
+														<option value="1">Empresa</option>
+														<option value="2">Oficina</option>
+													</select>
+													<span class="help-block">Este campo es requerido</span>
+												</div>
+											</div>
+											<div class="form-group form-actions">
+												<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+													<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+													<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+												</div>
+												<div class="row">&nbsp;</div>
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="table-responsive" style="border-top: solid 1px lightblue;">
+															<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+																<thead>
+																	<tr>
+																		<th>E-mail</th>
+																		<th class="text-center">Editar</th>
+																		<th class="text-center">Eliminar</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>conseti@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>brio@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>pakal@mail.com</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="table-responsive" style="border-top: solid 1px lightblue;">
+															<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+																<thead>
+																	<tr>
+																		<th>Telefono</th>
+																		<th>Extención</th>
+																		<th>Tipo</th>
+																		<th class="text-center">Editar</th>
+																		<th class="text-center">Eliminar</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>5522121212</td>
+																		<td>2211</td>
+																		<td>Empresa</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>5522121212</td>
+																		<td>2211</td>
+																		<td>Oficina</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-center">
+																			<div class="btn-group btn-group-xs">
+																				<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+										<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+									</div>
+
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Nombre</th>
+													<th>Apellido paterno</th>
+													<th>Apellido materno</th>
+													<th>Puesto</th>
+													<th>E-mails</th>
+													<th>Telefonos</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Alfredo</td>
+													<td>Solis</td>
+													<td>Alfaro</td>
+													<td>Recursos Humanos</td>
+													<td>
+														<p>rh@cliente.com</p>
+														<p>personal@correo.com</p>
+													</td>
+													<td>
+														<p>5512121212 -/- 1290 -/- Oficina</p>
+														<p>5512121212 -/- 2900 -/- Empresa</p>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>Eduardo</td>
+													<td>Martínez</td>
+													<td>Martínez</td>
+													<td>Sistemas</td>
+													<td>
+														<p>personal@mail.com</p>
+														<p>oficina@mail.com</p>
+													</td>
+													<td>
+														<p>5598653426 -/- 6767 -/- Oficina</p>
+														<p>5598760012 -/- 2323 -/- Empresa</p>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-primary"><i class="gi gi-pencil"></i></a>
+														</div>
+													</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="form_project subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Crear / Editar]<strong> Proyecto</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4 has-error">
+						<label class="col-md-5 control-label" for="ex">Nombre</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el nombre" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Fecha de inicio</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control input-datepicker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Fecha de fin</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control input-datepicker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Monto</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el monto" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label" for="ex">Duración</label>
+						<div class="col-md-7">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce la duración" />
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Descripción</label>
+						<div class="col-md-7">
+							<textarea class="form-control"></textarea>
+							<span class="help-block">Este campo es requerido</span>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('contractingProject');">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contratantes</strong></h2>
+							</div>
+							<!-- Section contracting //////////////////////////////////////////////////////////////////////////// -->
+							<div id="contractingProject_content" style="display: none">
+								<div class="form-group col-sm-10 col-sm-offset-2">
+									<label class="col-md-3 control-label" for="example-hf-password">Contratante</label>
+									<div class="col-md-9">
+										<select id="ex" name="ex" class="form-control" size="1">
+											<option value="0">Seleccione</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Contratante</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[Contratante .................................................................. 01]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratante .................................................................. 02]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratante .................................................................. 03]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('contractedProject')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Contratados</strong></h2>
+							</div>
+							<!-- Section contracted  //////////////////////////////////////////////////////////////////////////// -->
+							<div id="contractedProject_content" style="display: none">
+								<div class="form-group col-sm-10 col-sm-offset2">
+									<label class="col-md-3 control-label" for="example-hf-password">Contratado</label>
+									<div class="col-md-9">
+										<select id="ex" name="ex" class="form-control" size="1">
+											<option value="0">Seleccione</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary">
+											<i class="fa fa-user"></i> Agregar
+										</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="table-responsive">
+										<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+											<thead>
+												<tr>
+													<th>Contratado</th>
+													<th class="text-center">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[Contratado ............................................................ 01]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 02]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 03]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>[Contratado ............................................................ 04]</td>
+													<td class="text-center">
+														<div class="btn-group btn-group-xs">
+															<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<div class="block-options pull-right">
+									<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar" onclick="javascript:app.toogleSection('teamProject')">
+										<i class="fa fa fa-arrows-v"></i>
+									</a>
+								</div>
+								<h2>[Crear / Editar]<strong> Equipo de trabajo</strong></h2>
+							</div>
+							<!-- Section team  //////////////////////////////////////////////////////////////////////////// -->
+							<div id="teamProject_content" style="display: none">
+								<div class="form-group col-sm-6">
+									<label class="col-md-3 control-label" for="example-hf-password">Tipo de encargado</label>
+									<div class="col-md-9">
+										<select id="ex" name="ex" class="form-control" size="1">
+											<option value="0">Seleccione</option>
+											<option value="1">Responsable del cliente</option>
+											<option value="2">Operador del cliente</option>
+											<option value="3">Responsable CONSETI</option>
+											<option value="4">Asegurador / Supervisor</option>
+										</select>
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+								<div class="form-group col-sm-6">
+									<label class="col-md-3 control-label" for="example-hf-password">Nombre</label>
+									<div class="col-md-9">
+										<select id="ex" name="ex" class="form-control" size="1">
+											<option value="0">Seleccione</option>
+											<option value="1">Option #1</option>
+											<option value="2">Option #2</option>
+											<option value="3">Option #3</option>
+										</select>
+										<p>&nbsp</p>
+										<input type="text" id="ex" name="ex" class="form-control" placeholder="Buscar nombre" />
+										<span class="help-block">Este campo es requerido</span>
+									</div>
+								</div>
+
+								<div class="form-group form-actions">
+									<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 40px; margin-top: 40px;">
+										<button type="submit" class="btn btn-alt btn-sm btn-primary">
+											<i class="fa fa-user"></i> Agregar
+										</button>
+										<button type="submit" class="btn btn-alt btn-sm btn-default">
+											<i class="fa fa-trash-o"></i> Borrar equipo de trabajo
+										</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="col-sm-10 col-sm-offset-1" style="border: solid 1px lightblue; margin-top: 40px;">
+										<fieldset>
+											<div class="block-title">
+												<h2>Responsables del cliente</h2>
+											</div>
+											<div class="table-responsive">
+												<table id="general-table" class="table table-condensed table-borderless table-hover">
+													<thead>
+														<tr>
+															<th>Nombre</th>
+															<th>Rol</th>
+															<th class="text-center">Eliminar</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>[Encargado]</td>
+															<td>[Rol]</td>
+															<td class="text-center">
+																<div class="btn-group btn-group-xs">
+																	<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</fieldset>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="col-sm-10 col-sm-offset-1" style="border: solid 1px lightblue; margin-top: 40px;">
+										<fieldset>
+											<div class="block-title">
+												<h2>Operadores del cliente</h2>
+											</div>
+											<div class="table-responsive">
+												<table id="general-table" class="table table-condensed table-borderless table-hover">
+													<thead>
+														<tr>
+															<th>Nombre</th>
+															<th>Rol</th>
+															<th class="text-center">Eliminar</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>[Encargado]</td>
+															<td>[Rol]</td>
+															<td class="text-center">
+																<div class="btn-group btn-group-xs">
+																	<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</fieldset>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="col-sm-10 col-sm-offset-1" style="border: solid 1px lightblue; margin-top: 40px;">
+										<fieldset>
+											<div class="block-title">
+												<h2>Responsables de CONSETI</h2>
+											</div>
+											<div class="table-responsive">
+												<table id="general-table" class="table table-condensed table-borderless table-hover">
+													<thead>
+														<tr>
+															<th>Nombre</th>
+															<th>Rol</th>
+															<th class="text-center">Eliminar</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>[Encargado]</td>
+															<td>[Rol]</td>
+															<td class="text-center">
+																<div class="btn-group btn-group-xs">
+																	<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</fieldset>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="col-sm-10 col-sm-offset-1" style="border: solid 1px lightblue; margin-top: 40px;">
+										<fieldset>
+											<div class="block-title">
+												<h2>Aseguradores / Supervisores de CONSETI</h2>
+											</div>
+											<div class="table-responsive">
+												<table id="general-table" class="table table-condensed table-borderless table-hover">
+													<thead>
+														<tr>
+															<th>Nombre</th>
+															<th>Rol</th>
+															<th class="text-center">Eliminar</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>[Encargado]</td>
+															<td>[Rol]</td>
+															<td class="text-center">
+																<div class="btn-group btn-group-xs">
+																	<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>					
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="section_detail">
+		<div class="detail_customer subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Detalle]<strong> Cliente</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Nombre</label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[Nombre del cliente]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label"><strong>R.F.C.</strong></label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[R.F.C.]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Razón Social</label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[Razón social]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label"><strong>Giro</strong></label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[Giro del cliente]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label"><strong>URL</strong></label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[Página web del cliente]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label"><strong>Notas</strong></label>
+						<div class="col-md-7">
+							<label class="control-label text-info text-bold">[Notas del cliente]</label>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Áreas</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Área</th>
+											<th>Descripción</th>
+										</tr>
+									</thead>
+									<tbody class="text-info text-bold">
+										<tr>
+											<td>[Recursos humanos]</td>
+											<td>[Área encargada de todo lo relacionado al capital humano de la empresa]</td>
+										</tr>
+										<tr>
+											<td>[Finanzas]</td>
+											<td>[Área encargada del $ de la empresa]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Telefonos</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Telefono</th>
+											<th>Extenciones</th>
+											<th>Tipo</th>
+										</tr>
+									</thead>
+									<tbody class="text-info text-bold">
+										<tr>
+											<td>5512121212</td>
+											<td>2345, 5423, 1223</td>
+											<td>Oficina</td>
+										</tr>
+										<tr>
+											<td>5512121212</td>
+											<td>2345, 5423, 1223</td>
+											<td>Oficina</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Direcciones</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Calle y número</th>
+											<th>Colonia</th>
+											<th>Delegación / Municipio</th>
+											<th>Ciudad / Población</th>
+											<th>Estado</th>
+											<th>País</th>
+											<th>C.P.</th>
+										</tr>
+									</thead>
+									<tbody class="text-info text-bold">
+										<tr>
+											<td>[calle]</td>
+											<td>[colonia]</td>
+											<td>[delegación]</td>
+											<td>[ciudad]</td>
+											<td>[estado]</td>
+											<td>[país]</td>
+											<td>[c.p.]</td>
+										</tr>
+										<tr>
+											<td>[calle]</td>
+											<td>[colonia]</td>
+											<td>[delegación]</td>
+											<td>[ciudad]</td>
+											<td>[estado]</td>
+											<td>[país]</td>
+											<td>[c.p.]</td>
+										</tr>
+										<tr>
+											<td>[calle]</td>
+											<td>[colonia]</td>
+											<td>[delegación]</td>
+											<td>[ciudad]</td>
+											<td>[estado]</td>
+											<td>[país]</td>
+											<td>[c.p.]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contactos</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Apellido paterno</th>
+											<th>Apellido materno</th>
+											<th>Puesto</th>
+											<th>E-mails</th>
+											<th>Telefonos</th>
+										</tr>
+									</thead>
+									<tbody class="text-info text-bold">
+										<tr>
+											<td>Alfredo</td>
+											<td>Solis</td>
+											<td>Alfaro</td>
+											<td>Recursos Humanos</td>
+											<td>
+												<p>rh@cliente.com</p>
+												<p>personal@correo.com</p>
+											</td>
+											<td>
+												<p>5512121212 -/- 1290 -/- Oficina</p>
+												<p>5512121212 -/- 2900 -/- Empresa</p>
+											</td>
+										</tr>
+										<tr>
+											<td>Eduardo</td>
+											<td>Martínez</td>
+											<td>Martínez</td>
+											<td>Sistemas</td>
+											<td>
+												<p>personal@mail.com</p>
+												<p>oficina@mail.com</p>
+											</td>
+											<td>
+												<p>5598653426 -/- 6767 -/- Oficina</p>
+												<p>5598760012 -/- 2323 -/- Empresa</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<a href="javascript: mostrar('form_customer')" class="btn btn-alt btn-sm btn-primary">
+								<i class="fa fa-pencil"></i> Editar
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="detail_contract subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option"  onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Detalle]<strong> Contrato</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Contrato</label>
+						<div class="col-md-7">
+							<label class="control-label">[Nombre del contrato]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Cliente</label>
+						<div class="col-md-7">
+							<label class="control-label">[Nombre del cliente]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Fecha inicio</label>
+						<div class="col-md-7">
+							<label class="control-label">[12-12-2014]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Fecha fin</label>
+						<div class="col-md-7">
+							<label class="control-label">[30-12-2014]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Estatus</label>
+						<div class="col-md-7">
+							<label class="control-label">[Estatus]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Duración</label>
+						<div class="col-md-7">
+							<label class="control-label">[Duración]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Monto</label>
+						<div class="col-md-7">
+							<label class="control-label">[$ 100,000.00]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Director responsable</label>
+						<div class="col-md-7">
+							<label class="control-label">[Responsable]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Gerente responsable</label>
+						<div class="col-md-7">
+							<label class="control-label">[Responsable]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Director cliente</label>
+						<div class="col-md-7">
+							<label class="control-label">[Responsable]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Administrador responsable</label>
+						<div class="col-md-7">
+							<label class="control-label">[Responsable]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Tipo de servicio</label>
+						<div class="col-md-7">
+							<label class="control-label">[Tipo de servicio]</label>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contratantes</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Contratante</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Contratante ................................................................ 01]</td>
+										</tr>
+										<tr>
+											<td>[Contratante ................................................................ 02]</td>
+										</tr>
+										<tr>
+											<td>[Contratante ................................................................ 03]</td>
+										</tr>
+										<tr>
+											<td>[Contratante ................................................................ 04]</td>
+										</tr>
+										<tr>
+											<td>[Contratante ................................................................ 05]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contratados</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Contratado</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Contratado ................................................................ 01]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 02]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 03]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 04]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 05]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 06]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contactos</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Apellido paterno</th>
+											<th>Apellido materno</th>
+											<th>Puesto</th>
+											<th>E-mails</th>
+											<th>Telefonos</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Alfredo</td>
+											<td>Solis</td>
+											<td>Alfaro</td>
+											<td>Recursos Humanos</td>
+											<td>
+												<p>rh@cliente.com</p>
+												<p>personal@correo.com</p>
+											</td>
+											<td>
+												<p>5512121212 -/- 1290 -/- Oficina</p>
+												<p>5512121212 -/- 2900 -/- Empresa</p>
+											</td>
+										</tr>
+										<tr>
+											<td>Eduardo</td>
+											<td>Martínez</td>
+											<td>Martínez</td>
+											<td>Sistemas</td>
+											<td>
+												<p>personal@mail.com</p>
+												<p>oficina@mail.com</p>
+											</td>
+											<td>
+												<p>5598653426 -/- 6767 -/- Oficina</p>
+												<p>5598760012 -/- 2323 -/- Empresa</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<a href="javascript: goToForm();" class="btn btn-alt btn-sm btn-primary">
+								<i class="fa fa-pencil"></i> Editar
+							</a>
+							<a href="admin_proyectos.html" class="btn btn-alt btn-sm btn-default">
+								<i class="fa fa-clipboard"></i> Proyectos
+							</a>
+							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default">
+								<i class="fa fa-chevron-left"></i> Regresar
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="detail_project subsection" style="display: none;">
+			<div class="block">
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" onclick="app.cerrarBloque($(this))" title="Cerrar">
+							<i class="fa fa fa-times"></i>
+						</a>
+					</div>
+					<h2>[Detalle]<strong> Proyecto</strong></h2>
+				</div>
+				<form class="form-horizontal" onsubmit="return false;">
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Proyecto</label>
+						<div class="col-md-7">
+							<label class="control-label">[Nombre del proyecto]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Fecha inicio</label>
+						<div class="col-md-7">
+							<label class="control-label">[12-12-2014]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Fecha fin</label>
+						<div class="col-md-7">
+							<label class="control-label">[30-12-2014]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Duración</label>
+						<div class="col-md-7">
+							<label class="control-label">[Duración]</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-4">
+						<label class="col-md-5 control-label">Monto</label>
+						<div class="col-md-7">
+							<label class="control-label">[$ 100,000.00]</label>
+						</div>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contratantes</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Contratante</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Contratante ................................................................ 01]</td>
+										</tr>
+										<tr>
+											<td>[Contratante ................................................................ 02]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contratados</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Contratado</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Contratado ................................................................ 01]</td>
+										</tr>
+										<tr>
+											<td>[Contratado ................................................................ 02]</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+						<br>
+						<fieldset>
+							<div class="block-title">
+								<h2><strong>Contactos</strong></h2>
+							</div>
+							<div class="table-responsive">
+								<table id="general-table" class="table table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Apellido paterno</th>
+											<th>Apellido materno</th>
+											<th>Puesto</th>
+											<th>E-mails</th>
+											<th>Telefonos</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Alfredo</td>
+											<td>Solis</td>
+											<td>Alfaro</td>
+											<td>Recursos Humanos</td>
+											<td>
+												<p>rh@cliente.com</p>
+												<p>personal@correo.com</p>
+											</td>
+											<td>
+												<p>5512121212 -/- 1290 -/- Oficina</p>
+												<p>5512121212 -/- 2900 -/- Empresa</p>
+											</td>
+										</tr>
+										<tr>
+											<td>Eduardo</td>
+											<td>Martínez</td>
+											<td>Martínez</td>
+											<td>Sistemas</td>
+											<td>
+												<p>personal@mail.com</p>
+												<p>oficina@mail.com</p>
+											</td>
+											<td>
+												<p>5598653426 -/- 6767 -/- Oficina</p>
+												<p>5598760012 -/- 2323 -/- Empresa</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+							<a href="javascript: goToForm();" class="btn btn-alt btn-sm btn-primary">
+								<i class="fa fa-plus"></i> Crear
+							</a>
+							<a href="javascript: goToForm();" class="btn btn-alt btn-sm btn-default">
+								<i class="fa fa-pencil"></i> Editar
+							</a>
+							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default">
+								<i class="fa fa-chevron-left"></i> Regresar
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Section JS of admin clientes -->
+<script>
+
+	//links
+	app.navegarA({buttons:[
+		{
+			//supervisión
+			idComponente:'irRoadmap',
+			url:'src/roadmap'
+		},
+		{
+			idComponente:'irAntecedentes',
+			url:'src/antecedentes'
+		},
+		{
+			idComponente:'irAntecedentesp',
+			url:'src/antecedentesp'
+		},
+		{
+			idComponente:'irAseguramiento',
+			url:'src/aseguramiento'
+		},
+		{
+			idComponente:'irInventario',
+			url:'src/inventario'
+		},
+		{
+			idComponente:'irValidaciones',
+			url:'src/validaciones'
+		},
+		{
+			idComponente:'irTablero',
+			url:'src/tablero'
+		}
+	]});
+</script>
+<!-- End -->

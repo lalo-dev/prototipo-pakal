@@ -1,0 +1,358 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Registrar penalizaciones del contrato<br /><small>Revisar contrato</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpAc">Administrar CCP</a></li>
+	<li><a href="#" id="antecedentesAc">Antecedentes del contrato</a></li>
+	<li>Revisar contrato</li>
+	<li>Registrar penalizaciones del contrato</li>
+</ul>
+
+<div class="section_form">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Nombre del Cliente]</h2>
+			<br>
+			<h2>[Nombre del Contrato]</h2>
+			<br>
+			<h2>[Nombre del Proyecto]</h2>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="form-group col-md-12">
+				<label class="col-md-3 control-label" for="example-hf-password">Penalización</label>
+				<div class="col-md-9">
+					<input type="text" class="form-control" placeholder="Introduce la penalización" />
+				</div>
+			</div>
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+					<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+				</div>
+				<div class="row">&nbsp;</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-responsive">
+							<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+								<thead>
+									<tr>
+										<th>Penalización</th>
+										<th class="text-center">Borrar</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>[Nombre de la penalización 01]</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Nombre de la penalización 02]</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Nombre de la penalización 03]</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>[Nombre de la penalización 04]</td>
+										<td class="text-center">
+											<div class="btn-group btn-group-xs">
+												<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default" onclick="javascript: goToDetail()"><i class="fa fa-ban"></i> Consultar contrato</button>
+					<a id="regresar" style="cursor: pointer;" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+
+<div class="section_detail" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Detalle]<strong> Contrato</strong></h2>
+		</div>
+		<form class="form-horizontal" onsubmit="return false;">
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Contrato</label>
+				<div class="col-md-7">
+					<label class="control-label">[Nombre del contrato]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Cliente</label>
+				<div class="col-md-7">
+					<label class="control-label">[Nombre del cliente]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Fecha inicio</label>
+				<div class="col-md-7">
+					<label class="control-label">[12-12-2014]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Fecha fin</label>
+				<div class="col-md-7">
+					<label class="control-label">[30-12-2014]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Estatus</label>
+				<div class="col-md-7">
+					<label class="control-label">[Estatus]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Duración</label>
+				<div class="col-md-7">
+					<label class="control-label">[Duración]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Monto</label>
+				<div class="col-md-7">
+					<label class="control-label">[$ 100,000.00]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Director responsable</label>
+				<div class="col-md-7">
+					<label class="control-label">[Responsable]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Gerente responsable</label>
+				<div class="col-md-7">
+					<label class="control-label">[Responsable]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Director cliente</label>
+				<div class="col-md-7">
+					<label class="control-label">[Responsable]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Administrador responsable</label>
+				<div class="col-md-7">
+					<label class="control-label">[Responsable]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Tipo de servicio</label>
+				<div class="col-md-7">
+					<label class="control-label">[Tipo de servicio]</label>
+				</div>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<h2><strong>Contratantes</strong></h2>
+					</div>
+					<div class="table-responsive">
+						<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+							<thead>
+								<tr>
+									<th>Contratante</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[Contratante ................................................................ 01]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 02]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 03]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 04]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 05]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<h2><strong>Contratados</strong></h2>
+					</div>
+					<div class="table-responsive">
+						<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+							<thead>
+								<tr>
+									<th>Contratado</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[Contratado ................................................................ 01]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 02]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 03]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 04]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 05]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 06]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<h2><strong>Contactos</strong></h2>
+					</div>
+					<div class="table-responsive">
+						<table id="general-table" class="table table-condensed table-borderless table-hover">
+							<thead>
+								<tr>
+									<th>Nombre</th>
+									<th>Apellido paterno</th>
+									<th>Apellido materno</th>
+									<th>Puesto</th>
+									<th>E-mails</th>
+									<th>Telefonos</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Alfredo</td>
+									<td>Solis</td>
+									<td>Alfaro</td>
+									<td>Recursos Humanos</td>
+									<td>
+										<p>rh@cliente.com</p>
+										<p>personal@correo.com</p>
+									</td>
+									<td>
+										<p>5512121212 -/- 1290 -/- Oficina</p>
+										<p>5512121212 -/- 2900 -/- Empresa</p>
+									</td>
+								</tr>
+								<tr>
+									<td>Eduardo</td>
+									<td>Martínez</td>
+									<td>Martínez</td>
+									<td>Sistemas</td>
+									<td>
+										<p>personal@mail.com</p>
+										<p>oficina@mail.com</p>
+									</td>
+									<td>
+										<p>5598653426 -/- 6767 -/- Oficina</p>
+										<p>5598760012 -/- 2323 -/- Empresa</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Cerrar
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Section JS of admin clientes -->
+<script>
+	function toogleSection(section) {
+		$('#' + section + '_content').toggle('slow');
+	}
+
+	function goToGeneral() {
+		$('.section_detail').hide();
+		$('.section_form').show();
+	}
+
+	function goToDetail() {
+		$('.section_detail').show();
+		$('.section_form').hide();
+		$(window).scrollTop($('.section_detail').position().top-50);
+	}
+
+	$('#homeSubproceso').val('').val('section_planeacion');
+	$('#homeTask').val('').val('tasks_06');
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpAc',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'antecedentesAc',
+			url:'src/antecedentes'
+		},
+		{
+			idComponente:'regresar',
+			url:'src/antecedentes'
+		}
+	]});
+</script>
+<!-- End -->

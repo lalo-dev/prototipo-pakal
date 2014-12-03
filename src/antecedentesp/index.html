@@ -1,0 +1,201 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>[Proyecto]<br /><small>[Cliente - Contrato]</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpRoadmap">Administrar CCP</a></li>
+	<li>Revisar antecedentes del proyecto</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Roadmap</strong></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">	
+				<div class="widget">
+					<div class="widget-extra themed-background-dark">
+						<h4 class="widget-content-light">
+							Antecedentes del proyecto
+						</h4>
+					</div>
+					<div class="widget-extra">
+						<div class="timeline">
+							<ul class="timeline-list">
+								<li class="active">
+									<div class="timeline-icon themed-background-spring"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_vincular" style="cursor: pointer;">
+												<strong>Vincular documentación</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-autumn"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_trazabilidadProyecto" style="cursor: pointer;">
+												<strong>Trazabilidad del proyecto</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-fancy"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_mapeoObjetivos" style="cursor: pointer;">
+												<strong>Mapeo Objetivos Contrato vs Institución</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-fancy"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_mapeoBeneficios" style="cursor: pointer;">
+												<strong>Mapeo Beneficios Contrato vs Institución</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-fancy"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_mapeoFactores" style="cursor: pointer;">
+												<strong>Mapeos Factores Críticos de Éxito</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-fancy"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_mapeoSlas" style="cursor: pointer;">
+												<strong>Mapeo SLA’s/OLA's</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+								<li class="active">
+									<div class="timeline-icon themed-background-fancy"><i class="gi gi-git_merge"></i></div>
+									<div class="timeline-content">
+										<p class="push-bit">
+											<a id="pln_mapeoIndicadores" style="cursor: pointer;">
+												<strong>Mapeo Indicadores de Riesgo</strong>
+											</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Section JS of admin clientes -->
+<script>
+$(document).ready(function(){
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpRoadmap',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'pln_compulsa',
+			url:'src/pln_cnt_compulsa'
+		},
+		{
+			idComponente:'pln_solicitar',
+			url:'src/pln_cnt_solicitar'
+		},
+		{
+			idComponente:'pln_cargar',
+			url:'src/pln_cnt_cargar'
+		},
+		{
+			idComponente:'pln_trazabilidadContrato',
+			url:'src/pln_cnt_trazabilidadc'
+		},
+		{
+			idComponente:'pln_trazabilidadInstitucion',
+			url:'src/pln_cnt_trazabilidadi'
+		},
+		{
+			idComponente:'pln_proyecto',
+			url:'src/adm_proyectos'
+		},
+		{
+			idComponente:'pln_vincular',
+			url:'src/pln_pry_vincular'
+		},
+		{
+			idComponente:'pln_trazabilidadProyecto',
+			url:'src/pln_pry_trazabilidad'
+		},
+		{
+			idComponente:'pln_mapeoObjetivos',
+			url:'src/pln_pry_mapeo_objetivos'
+		},
+		{
+			idComponente:'pln_mapeoBeneficios',
+			url:'src/pln_pry_mapeo_beneficios'
+		},
+		{
+			idComponente:'pln_mapeoFactores',
+			url:'src/pln_pry_mapeo_factores'
+		},
+		{
+			idComponente:'pln_mapeoSlas',
+			url:'src/pln_pry_mapeo_slas'
+		},
+		{
+			idComponente:'pln_mapeoIndicadores',
+			url:'src/pln_pry_mapeo_indicadores'
+		},
+		{
+			idComponente:'rvs_responsables',
+			url:'src/rvs_responsables'
+		},
+		{
+			idComponente:'rvs_comunicacion',
+			url:'src/rvs_comunicacion'
+		},
+		{
+			idComponente:'rvs_penalizaciones',
+			url:'src/rvs_penalizaciones'
+		},
+		{
+			idComponente:'rvs_requerimientos',
+			url:'src/rvs_requerimientos'
+		},
+		{
+			idComponente:'mnv_externo',
+			url:'src/pln_pry_marcoe'
+		},
+		{
+			idComponente:'mnv_interno',
+			url:'src/pln_pry_marcoi'
+		},
+		{
+			idComponente:'pdp_proyecto',
+			url:'src/pdp_proyecto'
+		}
+	]});
+
+});
+</script>
+<!-- End -->

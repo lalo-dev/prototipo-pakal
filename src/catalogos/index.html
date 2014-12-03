@@ -1,0 +1,59 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Dashboard<br /><small>Administrar catálogos</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li>Administrar catalogos</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Administrar catalogos</strong></h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="widget" style="border: solid 2px #1bbae1; box-shadow: 0 0 2px; border-radius: 10px; cursor: pointer;" id="competencias">
+					<div class="widget-simple">
+						<a class="widget-icon pull-left themed-background">
+							<i class="gi gi-tags"></i>
+						</a>
+						<h3 class="text-right animation-stretchRight">
+							Administración de <strong>Competencias</strong>
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="widget" style="border: solid 2px #1bbae1; box-shadow: 0 0 2px; border-radius: 10px; cursor: pointer;" id="documentos">
+					<div class="widget-simple">
+						<a class="widget-icon pull-left themed-background">
+							<i class="gi gi-sort"></i>
+						</a>
+						<h3 class="text-right animation-stretchRight">
+							Admin de <strong>Tipo de documentos</strong>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Section JS of admin clientes -->
+<script>
+	app.navegarA({buttons:[
+		{
+			idComponente:'documentos',
+			url:'src/cat_documentos'
+		},
+		{
+			idComponente:'competencias',
+			url:'src/cat_competencias'
+		}
+	]});
+</script>
+<!-- End -->

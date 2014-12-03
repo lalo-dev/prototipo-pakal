@@ -1,0 +1,633 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>[Proyecto]<br /><small>[Cliente - Contrato]</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpRm">Administrar CCP</a></li>
+	<li><a href="#" id="roadmapRM">Supervisión</a></li>
+	<li>Riesgos</li>
+	<li>Análisis de riesgos</li>
+	<li>Registrar análisis de riesgos</li>
+</ul>
+
+<div class="section_detail">
+	<div class="block">
+		<div class="block-title">
+			<h2>Registrar análisis de riesgos</h2>
+		</div>
+		<br>
+		
+		<div class="col-sm-12" style="border: solid 1px lightblue">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							3
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('objetivos');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2><strong>Capturar amenazas</strong></h2>
+				</div>
+				<!-- Section Objetivos generales //////////////////////////////////////////////////////////////////////////// -->
+				<div id="objetivos_content" style="display: none">
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Amenaza</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione una amenaza del catalogo</option>
+								<option value="1">[Amenaza registrado en el sistema]</option>
+								<option value="2">[Amenaza registrado en el sistema]</option>
+								<option value="3">[Amenaza registrado en el sistema]</option>
+								<option value="4">[Amenaza registrado en el sistema]</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Amenaza</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce la amenaza" />
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="table-responsive">
+									<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Amenazas</th>
+												<th class="text-center">Borrar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Amenaza capturada en el registro de riesgos]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Amenaza capturada en el registro de riesgos]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Amenaza capturada en el registro de riesgos]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							3
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('metas');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2><strong>Capturar vulnerabilidad</strong></h2>
+				</div>
+				<!-- Section Objetivos especificos //////////////////////////////////////////////////////////////////////////// -->
+				<div id="metas_content" style="display: none">
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Vulnerabilidad</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione una vulnerabilidad del catalogo</option>
+								<option value="1">[Vulnerabilidad registrada en el sistema]</option>
+								<option value="2">[Vulnerabilidad registrada en el sistema]</option>
+								<option value="3">[Vulnerabilidad registrada en el sistema]</option>
+								<option value="4">[Vulnerabilidad registrada en el sistema]</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Vulnerabilidad</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce la vulnerabilidad" />
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">
+							<div class="col-md-12">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+										<thead>
+											<tr>
+												<th>Vulnerabilidades</th>
+												<th class="text-center">Borrar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>[Vulnerabilidad capturada en el registro de vulnerabilidades]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Vulnerabilidad capturada en el registro de vulnerabilidades]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>[Vulnerabilidad capturada en el registro de vulnerabilidades]</td>
+												<td class="text-center">
+													<div class="btn-group btn-group-xs">
+														<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-warning btn-option" data-toggle="tooltip" title="">
+							3
+						</a>
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('beneficio');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2><strong>Capturar impacto</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="beneficio_content" style="display: none">
+					<div class="form-group col-md-6">
+						<label class="col-md-3 control-label" for="example-hf-password">Tipo</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione un tipo de impacto</option>
+								<option value="1">[Tipo de impacto]</option>
+								<option value="2">[Tipo de impacto]</option>
+								<option value="3">[Tipo de impacto]</option>
+								<option value="4">[Tipo de impacto]</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-6">
+						<label class="col-md-3 control-label" for="example-hf-password">Clasificación</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione una clasificación del impacto</option>
+								<option value="1">[Clasificación del impacto]</option>
+								<option value="2">[Clasificación del impacto]</option>
+								<option value="3">[Clasificación del impacto]</option>
+								<option value="4">[Clasificación del impacto]</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Impacto</label>
+						<div class="col-md-9">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione un impacto</option>
+								<option value="1">[Impacto registrado en el catalogo]</option>
+								<option value="2">[Impacto registrado en el catalogo]</option>
+								<option value="3">[Impacto registrado en el catalogo]</option>
+								<option value="4">[Impacto registrado en el catalogo]</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-12">
+						<label class="col-md-3 control-label" for="example-hf-password">Impacto</label>
+						<div class="col-md-9">
+							<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el impacto" />
+						</div>
+					</div>
+					<div class="form-group form-actions">
+						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Agregar</button>
+							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
+						</div>
+						<div class="row">&nbsp;</div>
+						<div class="row">							
+							<div class="table-responsive">
+								<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+									<thead>
+										<tr>
+											<th>Tipo</th>
+											<th>Clasificación</th>
+											<th>Impactos</th>
+											<th class="text-center">Borrar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>[Tipo]</td>
+											<td>[Clasificación]</td>
+											<td>[Impacto registrado en el sistema]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[Tipo]</td>
+											<td>[Clasificación]</td>
+											<td>[Impacto registrado en el sistema]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[Tipo]</td>
+											<td>[Clasificación]</td>
+											<td>[Impacto registrado en el sistema]</td>
+											<td class="text-center">
+												<div class="btn-group btn-group-xs">
+													<a href="javascript:void(0)" data-toggle="tooltip" title="Detalle" class="btn btn-danger"><i class="gi gi-bin"></i></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('sla');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2><strong>Calificar riesgo</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="sla_content" style="display: none">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="alert alert-info alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="false">&times;</button>
+								<h4 class="text-center">
+									<i class="fa fa-info-circle"></i> Info
+								</h4> 
+								<a href="javascript:void(0)" class="alert-link text-center" onclick="javascript:app.toogleSection('ayuda');">
+									<p>Ayuda calificar riesgo</p>
+								</a>
+
+								<div id="ayuda_content" style="display: none">
+									<table class="table table-condensed table-vcenter">
+										<tbody>
+											<tr>
+												<th>Probabilidad</th>
+												<td colspan="5">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Casi es una certeza</td>
+												<td style="width: 15%; border: 1px solid white; background-color: yellow;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Muy probable</td>
+												<td style="width: 15%; border: 1px solid white; background-color: yellow;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Posible</td>
+												<td style="width: 15%; border: 1px solid white; background-color: green;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: yellow;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Poco probable</td>
+												<td style="width: 15%; border: 1px solid white; background-color: green;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: green;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: yellow;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Raro</td>
+												<td style="width: 15%; border: 1px solid white; background-color: green;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: green;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: yellow;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: orange;">&nbsp;</td>
+												<td style="width: 15%; border: 1px solid white; background-color: red;">&nbsp;</td>
+											</tr>
+											<tr>
+												<th>Impacto</th>
+												<td>Insignificante</td>
+												<td>Menor</td>
+												<td>Moderado</td>
+												<td>Mayor</td>
+												<td>Catastrofico</td>
+											</tr>
+											<tr>
+												<th>Equivalencia color</th>
+												<td colspan="5">
+													<i class="gi gi-skull fa-2x text-success"></i> Bajo riesgo
+													&nbsp;&nbsp;&nbsp;&nbsp;
+													<i class="gi gi-skull fa-2x text-yellow"></i> Riesgo menor
+													&nbsp;&nbsp;&nbsp;&nbsp;
+													<i class="gi gi-skull fa-2x text-warning"></i> Riesgo moderado
+													&nbsp;&nbsp;&nbsp;&nbsp;
+													<i class="gi gi-skull fa-2x text-danger"></i> Alto riesgo
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-4 control-label" for="example-hf-password">Probabilidad</label>
+						<div class="col-md-8">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione una probabilidad</option>
+								<option value="1">Raro</option>
+								<option value="2">Poco posible</option>
+								<option value="3">Posible</option>
+								<option value="4">Muy probable</option>
+								<option value="5">Casi es una certeza</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-4 control-label" for="example-hf-password">Impacto</label>
+						<div class="col-md-8">
+							<select id="example-select" name="example-select" class="form-control" size="1">
+								<option value="0">Seleccione un impacto</option>
+								<option value="1">Insignificante</option>
+								<option value="2">Menor</option>
+								<option value="3">Moderado</option>
+								<option value="4">Mayor</option>
+								<option value="5">Catastrofico</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-md-4">
+						<label class="col-md-6 control-label" for="example-hf-password">Riesgo Moderado</label>
+						<div class="col-md-6" style="background-color: orange">
+							&nbsp;
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+			<br>
+			<fieldset>
+				<div class="block-title">
+					<div class="block-options pull-right">
+						<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Mostrar / Ocultar"  onclick="javascript:app.toogleSection('productos');">
+							<i class="fa fa fa-arrows-v"></i>
+						</a>
+					</div>
+					<h2><strong>Cuantificar riesgo</strong></h2>
+				</div>
+				<!-- Section Areas //////////////////////////////////////////////////////////////////////////// -->
+				<div id="productos_content" style="display: none">
+					<div class="row">
+						<div class="form-group col-md-4">
+							<label class="col-md-6 control-label" for="ex">Valor contrato</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="$" />
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label class="col-md-6 control-label" for="ex">% efectividad</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label class="col-md-6 control-label" for="ex">% inefectividad</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4 col-md-offset-8">
+							<label class="col-md-6 control-label" for="ex">(+ -) Capacidades basicas</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4 col-md-offset-8">
+							<label class="col-md-6 control-label" for="ex">(+ -) Capacidades criticas</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4 col-md-offset-8">
+							<label class="col-md-6 control-label" for="ex">(-) Validaciones</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4 col-md-offset-8">
+							<label class="col-md-6 control-label" for="ex">% inefectividad final</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+						<div class="form-group col-md-4 col-md-offset-8">
+							<label class="col-md-6 control-label" for="ex">VAR</label>
+							<div class="col-md-6">
+								<input type="text" id="ex" name="ex" class="form-control" placeholder="%" />
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+
+					<div class="form-group form-actions">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="table-responsive">
+									<table class="table table-vcenter table-condensed table-borderless">
+										<thead>
+											<tr>
+												<th style="width: 90%;">Capacidades basicas</th>
+												<th style="width: 10%;">&nbsp;</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Experiencia en procesos</td>
+												<td>
+													<label class="switch switch-primary">
+														<input type="checkbox" /><span></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>Certificaciones tecnológicas</td>
+												<td>
+													<label class="switch switch-primary">
+														<input type="checkbox" /><span></span>
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="table-responsive">
+									<table class="table table-vcenter table-condensed table-borderless">
+										<thead>
+											<tr>
+												<th style="width: 90%;">Capacidades criticas</th>
+												<th style="width: 10%;">&nbsp;</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Capacidad financiera</td>
+												<td>
+													<label class="switch switch-primary">
+														<input type="checkbox" /><span></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>Capacidad legal</td>
+												<td>
+													<label class="switch switch-primary">
+														<input type="checkbox" /><span></span>
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="table-responsive">
+									<table class="table table-vcenter table-condensed table-borderless">
+										<thead>
+											<tr>
+												<th style="width: 90%;">Validación</th>
+												<th style="width: 10%;">&nbsp;</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Objetivos, beneficios. Factibilidad operativa, tecnológica y operativa.</td>
+												<td>
+													<label class="switch switch-primary">
+														<input type="checkbox" /><span></span>
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="row">
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<a id="regresar" style="cursor: pointer;" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+
+<!-- Section JS of admin clientes -->
+<script>
+	$('#homeSubproceso').val('').val('section_risks');
+	$('#homeTask').val('').val('tasks_02');
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpRm',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'roadmapRM',
+			url:'src/roadmap'
+		},
+		{
+			idComponente:'regresar',
+			url:'src/roadmap'
+		}
+	]});
+</script>
+<!-- End -->

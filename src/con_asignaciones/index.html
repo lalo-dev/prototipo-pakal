@@ -1,0 +1,426 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Asignaciones<br /><small>Consultar asignaciones</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Consulta</a></li>
+	<li>Asignaciones</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Lista de asignaciones</strong></h2>
+		</div>
+		<div class="table-responsive">
+			<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+				<thead>
+					<tr>
+						<th>Proyecto</th>
+						<th>Contrato</th>
+						<th>Cliente</th>
+						<th>Tipo se servicio</th>
+						<th class="text-center">Detalle</th>
+						<th class="text-center">Capturar metodo PAKAL</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>[Proyecto 01]</td>
+						<td>[Contrato]</td>
+						<td>[Cliente]</td>
+						<td>[Servicio]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>[Proyecto 02]</td>
+						<td>[Contrato]</td>
+						<td>[Cliente]</td>
+						<td>[Servicio]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToDetail()" data-toggle="tooltip" title="Detalle" class="btn btn-primary">
+									<i class="fa fa-eye"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="section_form" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong> Capturar método PAKAL</strong></h2>
+		</div>
+		<div class="table-responsive">
+			<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+				<thead>
+					<tr>
+						<th style="width: 70%">Etapa</th>
+						<th style="width: 10%">Estatus</th>
+						<th style="width: 10%" class="text-center">Acceso</th>
+						<th style="width: 10%" class="text-center">Editar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Administración de Documentos del proyecto</td>
+						<td>
+							<span class="label label-danger">
+								<i class="fa fa-stop"></i>&nbsp;&nbsp;Ejecutada
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+
+								<i class="fa fa-unlock"></i>
+
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Antecedentes: Contexto General de la evaluación</td>
+						<td>
+							<span class="label label-success">
+								<i class="fa fa-play"></i>&nbsp;&nbsp;En proceso
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+
+								<i class="fa fa-unlock"></i>
+
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 01: Administrar información de factores críticos de éxito de la gestión del contrato</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 02: Administrar información de PETIC</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 03: Administrar información de los objetivos y beneficios del contrato</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 04: Administrar información de la configuración de los productos y entregables</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 05: Administrar información de cumplimiento de la recepción de los servicios y cumplimiento de los beneficios</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Etapa 06: Generar Reportes de Hallazgos u Observaciones, omisiones, excepciones y conclusiones sobre los mapeos realizados en las etapas 2,3,4 y 5</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Elaborar reportes de Evaluación de cumplimiento de objetivos, beneficios, entregables y/o productos y cumplimiento de Acuerdos de nivel de servicio</td>
+						<td>
+							<span class="label label-warning">
+								<i class="fa fa-pause"></i>&nbsp;&nbsp;En espera
+							</span>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<i class="fa fa-lock"></i>
+							</div>
+						</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="#" data-toggle="tooltip" title="PAKAL" class="btn btn-primary">
+									<i class="fa fa-pencil-square-o"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<form class="form-horizontal" onsubmit="return false;">
+				<div class="form-group form-actions">
+					<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+						<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-primary">
+							<i class="fa fa-chevron-left"></i> Regresar
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="section_detail" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Detalle]<strong> Asignación</strong></h2>
+		</div>
+		<form class="form-horizontal" onsubmit="return false;">
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Proyecto</label>
+				<div class="col-md-7">
+					<label class="control-label">[Nombre del proyecto]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Fecha inicio</label>
+				<div class="col-md-7">
+					<label class="control-label">[12-12-2014]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Fecha fin</label>
+				<div class="col-md-7">
+					<label class="control-label">[30-12-2014]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Monto</label>
+				<div class="col-md-7">
+					<label class="control-label">[$ 100,000.00]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Duración</label>
+				<div class="col-md-7">
+					<label class="control-label">[Duración]</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-4">
+				<label class="col-md-5 control-label">Comentarios</label>
+				<div class="col-md-7">
+					<textarea></textarea>
+				</div>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<h2><strong>Contratantes</strong></h2>
+					</div>
+					<div class="table-responsive">
+						<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+							<thead>
+								<tr>
+									<th>Contratante</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[Contratante ................................................................ 01]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 02]</td>
+								</tr>
+								<tr>
+									<td>[Contratante ................................................................ 03]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="col-sm-12" style="border: solid 1px lightblue; margin-top: 40px;">
+				<br>
+				<fieldset>
+					<div class="block-title">
+						<h2><strong>Contratados</strong></h2>
+					</div>
+					<div class="table-responsive">
+						<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+							<thead>
+								<tr>
+									<th>Contratado</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[Contratado ................................................................ 01]</td>
+								</tr>
+								<tr>
+									<td>[Contratado ................................................................ 02]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-primary">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Section JS of consultar asignaciones -->
+<script>
+	function toogleSection(section) {
+		$('#' + section + '_content').toggle('slow');
+	}
+
+	function goToForm() {
+		$('.section_form').show();
+		$('.section_detail').hide();
+		$(window).scrollTop($('.section_form').position().top-50);
+	}
+
+	function goToGeneral() {
+		$('.section_detail').hide();
+		$('.section_form').hide();
+		//$('.section_list').show();
+	}
+
+	function goToDetail() {
+		$('.section_detail').show();
+		$('.section_form').hide();
+		$(window).scrollTop($('.section_detail').position().top-50);
+	}
+</script>
+<!-- End -->

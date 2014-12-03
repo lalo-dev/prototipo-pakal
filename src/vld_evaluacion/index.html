@@ -1,0 +1,189 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>[Proyecto]<br /><small>[Cliente - Contrato]</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpRoadmap">Administrar CCP</a></li>
+	<li><a href="#" id="irValidacion">Validaciones</a></li>
+	<li>Validar reporte de evaluación</li>
+</ul>
+
+<div class="section_detail">
+	<div class="block">
+		<div class="block-title">
+			<h2>Validar reporte de evaluación</h2>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="alert alert-info alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="false">&times;</button>
+					<h4 class="text-center">
+						<i class="fa fa-info-circle"></i> Info
+					</h4> 
+					<a href="javascript:void(0)" class="alert-link text-center" onclick="javascript:app.toogleSection('ayuda');">
+						<p>Ayuda perfiles de validación</p>
+					</a>
+
+					<div id="ayuda_content" style="display: none">
+						<table class="table table-condensed table-vcenter">
+							<tbody>
+								<tr>
+									<td style="width: 10%">A</td>
+									<td style="width: 55%">Director</td>
+									<td style="width: 35%">CONSETI</td>
+								</tr>
+								<tr>
+									<td style="width: 10%">B</td>
+									<td style="width: 55%">Director</td>
+									<td style="width: 35%">CLIENTE</td>
+								</tr>
+								<tr>
+									<td style="width: 10%">C</td>
+									<td style="width: 55%">Gerente</td>
+									<td style="width: 35%">ASEGURAMIENTO</td>
+								</tr>
+								<tr>
+									<td style="width: 10%">D</td>
+									<td style="width: 55%">Administrador de contrato</td>
+									<td style="width: 35%">CLIENTE</td>
+								</tr>
+								<tr>
+									<td style="width: 10%">E</td>
+									<td style="width: 55%">Líder de proyecto</td>
+									<td style="width: 35%">ASEGURAMIENTO</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">&nbsp;</div>
+
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-condensed table-borderless">
+					<thead>
+						<tr>
+							<th style="width: 50%">Reporte</th>
+							<th style="width: 5%">A</th>
+							<th style="width: 5%">B</th>
+							<th style="width: 5%">C</th>
+							<th style="width: 5%">D</th>
+							<th style="width: 5%">E</th>
+							<th style="width: 25%">Observaciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#">Archivo del reporte de evaluación guardada en el sistema</a>
+							</td>
+							<td>
+								<label class="switch switch-primary">
+									<input type="checkbox" checked="" /><span></span>
+								</label>
+							</td>
+							<td>
+								<label class="switch switch-primary">
+									<input type="checkbox" checked="" /><span></span>
+								</label>
+							</td>
+							<td>
+								<label class="switch switch-primary">
+									<input type="checkbox" checked="" /><span></span>
+								</label>
+							</td>
+							<td>
+								<label class="switch switch-primary">
+									<input type="checkbox" checked="" /><span></span>
+								</label>
+							</td>
+							<td>
+								<label class="switch switch-primary">
+									<input type="checkbox" checked="" /><span></span>
+								</label>
+							</td>
+							<td>
+								<table class="table table-condensed table-borderless">
+									<tbody>
+										<tr>
+											<td>
+												<textarea></textarea>
+											</td>
+											<td>
+												<a href="#" class="btn btn-alt btn-success"><i class="fa fa-plus"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<textarea>[usuario]: comentario</textarea>
+											</td>
+											<td>
+												<a href="#" class="btn btn-alt btn-danger"><i class="fa fa-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<textarea>[usuario]: comentario</textarea>
+											</td>
+											<td>
+												<a href="#" class="btn btn-alt btn-danger"><i class="fa fa-times"></i></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<a id="regresar" style="cursor: pointer;" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+	</div>
+</div>
+
+<!-- Section JS of admin clientes -->
+<script>
+$(document).ready(function(){
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpRoadmap',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'irValidacion',
+			url:'src/validaciones'
+		},
+		{
+			idComponente:'regresar',
+			url:'src/validaciones'
+		}
+	]});
+
+});
+</script>
+<!-- End -->

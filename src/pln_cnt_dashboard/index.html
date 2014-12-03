@@ -1,0 +1,195 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Planeación<br /><small>Administración de antecedentes del contrato</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Planeación</a></li>
+	<li>Revisar antecedentes del contrato</li>
+</ul>
+
+<div class="section_detail">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Nombre del Cliente]</h2>
+			<br>
+			<h2>[Nombre del Contrato]</h2>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td style="width: 75%;">
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Crear contrato
+								</h4>
+							</td>
+							<td style="width: 20%;">
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+								</div>
+							</td>
+							<td style="width: 5%;">
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_contrato">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Solicitar documentación
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_solicitar">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Carga de documentos
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_cargar">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Compulsa de documentos
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_compulsa">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Registrar trazabilidad del contrato
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+								</div>
+							</td>
+							<td>
+								<button class="btn btn-sm btn-alt btn-primary" id="pln_trazabilidadContrato">
+									<i class="gi gi-share"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Registrar trazabilidad de la institución
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_trazabilidadInstitucion">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									<i class="gi gi-package fa-2x text-info"></i>&nbsp;&nbsp;
+									Crear proyecto
+								</h4>
+							</td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">5%</div>
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-sm btn-alt btn-primary" id="pln_proyecto">
+									<i class="gi gi-share"></i>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Section JS of admin clientes -->
+<script>
+$(document).ready(function(){
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'pln_contrato',
+			url:'src/adm_contratos'
+		},
+		{
+			idComponente:'pln_compulsa',
+			url:'src/pln_cnt_compulsa'
+		},
+		{
+			idComponente:'pln_solicitar',
+			url:'src/pln_cnt_solicitar'
+		},
+		{
+			idComponente:'pln_cargar',
+			url:'src/pln_cnt_cargar'
+		},
+		{
+			idComponente:'pln_trazabilidadContrato',
+			url:'src/pln_cnt_trazabilidadc'
+		},
+		{
+			idComponente:'pln_trazabilidadInstitucion',
+			url:'src/pln_cnt_trazabilidadi'
+		},
+		{
+			idComponente:'pln_proyecto',
+			url:'src/adm_proyectos'
+		}
+	]});
+});
+</script>
+<!-- End -->

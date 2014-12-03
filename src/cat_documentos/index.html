@@ -1,0 +1,223 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Tipo de documentos<br /><small>Administración</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="catalogos">Administrar catalogos</a></li>
+	<li>Administración de tipos de documentos</li>
+</ul>
+
+<div class="section_list">
+	<div class="block">
+		<div class="block-title">
+			<h2><strong>Lista de tipos de documentos</strong></h2>
+		</div>
+		<div class="table-options clearfix">
+			<div class="row">
+				<div class="col-sm-1 col-sm-offset-2">
+					<a href="javascript: goToForm();" class="btn btn-sm btn-alt btn-primary"><i class="fa fa-plus"></i> Crear</a>
+				</div>
+				<div class="col-sm-6">
+					<div class="input-group" style="padding-left: 10px;">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+						<input type="text" id="example-input1-group1" name="example-input1-group1" class="form-control input-sm" placeholder="Filtro de búsqueda" />
+					</div>
+				</div>
+				<div class="col-sm-1 text-right">
+					<button class="btn btn-sm btn-alt btn-primary"><i class="gi gi-refresh"></i> Recargar</button>
+				</div>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table id="general-table" class="table table-vcenter table-condensed table-borderless table-hover">
+				<thead>
+					<tr>
+						<th>Servicio</th>
+						<th>Etapa</th>
+						<th>Actividad</th>
+						<th>Tipo</th>
+						<th class="text-center">Editar</th>
+						<th class="text-center">Estatus</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>[Aseguramiento]</td>
+						<td>[Etapa]</td>
+						<td>[Actividad]</td>
+						<td>[Tipo de documento]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="Editar" class="btn btn-primary">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[Aseguramiento]</td>
+						<td>[Etapa]</td>
+						<td>[Actividad]</td>
+						<td>[Tipo de documento]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="Editar" class="btn btn-primary">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[Aseguramiento]</td>
+						<td>[Etapa]</td>
+						<td>[Actividad]</td>
+						<td>[Tipo de documento]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="Editar" class="btn btn-primary">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[Supervisión]</td>
+						<td>[Etapa]</td>
+						<td>[Actividad]</td>
+						<td>[Tipo de documento]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="Editar" class="btn btn-primary">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+					<tr>
+						<td>[Supervisión]</td>
+						<td>[Etapa]</td>
+						<td>[Actividad]</td>
+						<td>[Tipo de documento]</td>
+						<td class="text-center">
+							<div class="btn-group btn-group-xs">
+								<a href="javascript: goToForm()" data-toggle="tooltip" title="Editar" class="btn btn-primary">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</div>
+						</td>
+						<td class="text-center">
+							<label class="switch switch-primary"><input type="checkbox" checked="" /><span></span></label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class="section_form" style="display: none;">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Crear / Editar]<strong> Tipo de documento</strong></h2>
+		</div>
+		<form class="form-horizontal" onsubmit="return false;">
+			<div class="form-group col-sm-6 has-error">
+				<label class="col-md-3 control-label" for="ex">Servicio</label>
+				<div class="col-md-9">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">Aseguramiento</option>
+						<option value="2">Supervisión</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-6">
+				<label class="col-md-3 control-label" for="ex">Etapa</label>
+				<div class="col-md-9">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">Etapa A</option>
+						<option value="2">Etapa B</option>
+						<option value="3">Etapa C</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-6">
+				<label class="col-md-3 control-label" for="ex">Actividad</label>
+				<div class="col-md-9">
+					<select id="ex" name="ex" class="form-control" size="1">
+						<option value="0">Seleccione</option>
+						<option value="1">Actividad 1</option>
+						<option value="2">Actividad 2</option>
+						<option value="3">Actividad 3</option>
+						<option value="3">Actividad 4</option>
+					</select>
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+			<div class="form-group col-sm-6">
+				<label class="col-md-3 control-label" for="ex">Tipo de documento</label>
+				<div class="col-md-9">
+					<input type="text" id="ex" name="ex" class="form-control" placeholder="Introduce el tipo de documento" />
+					<span class="help-block">Este campo es requerido</span>
+				</div>
+			</div>
+
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Section JS of admin usuarios -->
+<script>
+	function toogleSection(section) {
+		$('#' + section + '_content').toggle('slow');
+	}
+
+	function goToForm() {
+		$('.section_form').show();
+		$('.section_detail').hide();
+		$(window).scrollTop($('.section_form').position().top-50);
+	}
+
+	function goToGeneral() {
+		$('.section_detail').hide();
+		$('.section_form').hide();
+		//$('.section_list').show();
+	}
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'catalogos',
+			url:'src/catalogos'
+		}
+	]});
+</script>
+<!-- End -->

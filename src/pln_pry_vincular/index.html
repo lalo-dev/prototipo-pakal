@@ -1,0 +1,137 @@
+<div class="content-header">
+	<div class="header-section">
+		<h1>
+			<i class="gi gi-dashboard"> - Logo</i>Vincular documentación del proyecto<br /><small>Antecedentes del proyecto</small>
+		</h1>
+	</div>
+</div>
+<ul class="breadcrumb breadcrumb-top">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="#" id="ccpRm">Administrar CCP</a></li>
+	<li><a href="#" id="roadmapRM">Antecedentes del proyecto</a></li>
+	<li>Vincular documentación del proyecto</li>
+</ul>
+
+<div class="section_select">
+	<div class="block">
+		<div class="block-title">
+			<h2>[Nombre del Cliente]</h2>
+			<br>
+			<h2>[Nombre del Contrato]</h2>
+			<br>
+			<h2>[Nombre del Proyecto]</h2>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h4 class="text-center">Selección de documentos del contrato</h4>
+				<br>
+				<table class="table" style="font-size: 13px;">
+					<tbody>
+						<tr>
+							<td style="width: 15px;"><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Plan estratégico institucional
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Plan estratégico de TI
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Manual de la organización
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Reglamentos
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Politicas
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Procedimientos
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Documentos de procesos
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Documentos de servicios
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								<i class="gi gi-file fa-2x text-info"></i>&nbsp;&nbsp;
+								Listado de proyectos
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group form-actions">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
+					<button type="reset" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-check"></i> Aceptar</button>
+					<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-ban"></i> Cancelar</button>
+					<a id="regresar" style="cursor: pointer;" class="btn btn-alt btn-sm btn-default">
+						<i class="fa fa-chevron-left"></i> Regresar
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+	</div>
+</div>
+
+<!-- Section JS of vincular documentos -->
+<script>
+$(document).ready(function(){
+
+	app.navegarA({buttons:[
+		{
+			idComponente:'ccpRm',
+			url:'src/ccp'
+		},
+		{
+			idComponente:'roadmapRM',
+			url:'src/antecedentesp'
+		},
+		{
+			idComponente:'regresar',
+			url:'src/antecedentesp'
+		}
+	]});
+
+});
+</script>
+<!-- End -->
