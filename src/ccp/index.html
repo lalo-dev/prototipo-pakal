@@ -20,8 +20,8 @@
 				<div class="block" style="min-height: 300px;">
 					<div class="block-title">
 						<div class="block-options pull-left">
-							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total" id="totalClientes">
-								4
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total" id="aTotalClientes">
+								0
 							</a>
 						</div>
 						<div class="block-options pull-right">
@@ -34,122 +34,7 @@
 					<div class="table-responsive">
 						<table id="tblClientes" class="table table-vcenter table-condensed table-borderless table-hover">
 							<tbody>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: app.mostrar('subsection','detail_customer','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: app.mostrar('subsection','form_customer','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)" onclick="$('#tblContratos,#totalContratos,#agregarContrato').show();">[Nombre cliente 01]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" checked="" /><span></span>
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: mostrar('subsection','detail_customer','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: mostrar('subsection','form_customer','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)">[Nombre cliente 02]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" /><span></span>
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: mostrar('subsection','detail_customer','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: mostrar('subsection','form_customer','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)">[Nombre cliente 03]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" checked="" /><span></span>
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: mostrar('subsection','detail_customer','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: mostrar('subsection','form_customer','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)">[Nombre cliente 04]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" /><span></span>
-										</label>
-									</td>
-								</tr>
+								<!-- Lista de clientes -->
 							</tbody>
 						</table>
 					</div>
@@ -159,8 +44,8 @@
 				<div class="block" style="min-height: 300px;">
 					<div class="block-title">
 						<div id="totalContratos" class="block-options pull-left" style="display: none;">
-							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total">
-								3
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total" id="aTotalContratos">
+								0
 							</a>
 						</div>
 						<div id="agregarContrato" class="block-options pull-right" style="display: none;">
@@ -173,107 +58,7 @@
 					<div class="table-responsive">
 						<table id="tblContratos" class="table table-vcenter table-condensed table-borderless table-hover" style="display: none;">
 							<tbody>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a id="irAntecedentes" style="cursor: pointer;">
-															<i class="fa fa-folder pull-right"></i>Antecedentes
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)" onclick="$('#tblProyectos,#totalProyectos,#agregarProyecto').show();">[Nombre contrato 01]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" checked="" /><span></span>
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="javascript:void(0)"><i class="fa fa-folder pull-right"></i>Antecedentes</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)">[Nombre contrato 02]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" /><span></span>
-										</label>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<button class="btn btn-primary dropdown-toggle btn-sm btn-alt" data-toggle="dropdown">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu dropdown-custom">
-													<li>
-														<a href="javascript: app.mostrar('subsection','detail_contract','yes')">
-															<i class="fa fa-eye pull-right"></i>Detalle
-														</a>
-														<a href="javascript: app.mostrar('subsection','form_contract','yes')">
-															<i class="fa fa-pencil pull-right"></i>Editar
-														</a>
-													</li>
-													<li class="divider"></li>
-													<li>
-														<a href="javascript:void(0)"><i class="fa fa-folder pull-right"></i>Antecedentes</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</td>
-									<td>
-										<span><a href="javascript:void(0)">[Nombre contrato 03]</a></span>
-									</td>
-									<td>
-										<label class="switch switch-primary">
-											<input type="checkbox" /><span></span>
-										</label>
-									</td>
-								</tr>
+								<!-- Lista de contratos -->
 							</tbody>
 						</table>
 					</div>
@@ -283,8 +68,8 @@
 				<div class="block" style="min-height: 300px;">
 					<div class="block-title">
 						<div id="totalProyectos" class="block-options pull-left" style="display: none;">
-							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total">
-								5
+							<a class="btn btn-alt btn-sm btn-primary btn-option" data-toggle="tooltip" title="Total" id="aTotalProyectos">
+								0
 							</a>
 						</div>
 						<div id="agregarProyecto" class="block-options pull-right" style="display: none;">
@@ -2260,39 +2045,39 @@
 				</div>
 				<form class="form-horizontal" onsubmit="return false;">
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label">Nombre</label>
+						<label class="col-md-5 control-label text-info">Nombre</label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[Nombre del cliente]</label>
+							<label class="control-label">[Nombre del cliente]</label>
 						</div>
 					</div>
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label"><strong>R.F.C.</strong></label>
+						<label class="col-md-5 control-label text-info"><strong>R.F.C.</strong></label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[R.F.C.]</label>
+							<label class="control-label">[R.F.C.]</label>
 						</div>
 					</div>
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label">Razón Social</label>
+						<label class="col-md-5 control-label text-info">Razón Social</label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[Razón social]</label>
+							<label class="control-label">[Razón social]</label>
 						</div>
 					</div>
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label"><strong>Giro</strong></label>
+						<label class="col-md-5 control-label text-info"><strong>Giro</strong></label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[Giro del cliente]</label>
+							<label class="control-label">[Giro del cliente]</label>
 						</div>
 					</div>
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label"><strong>URL</strong></label>
+						<label class="col-md-5 control-label text-info"><strong>URL</strong></label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[Página web del cliente]</label>
+							<label class="control-label">[Página web del cliente]</label>
 						</div>
 					</div>
 					<div class="form-group col-sm-4">
-						<label class="col-md-5 control-label"><strong>Notas</strong></label>
+						<label class="col-md-5 control-label text-info"><strong>Notas</strong></label>
 						<div class="col-md-7">
-							<label class="control-label text-info text-bold">[Notas del cliente]</label>
+							<label class="control-label">[Notas del cliente]</label>
 						</div>
 					</div>
 

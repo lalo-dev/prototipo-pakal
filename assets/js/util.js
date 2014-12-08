@@ -34,7 +34,6 @@ function peticionAjax(datos,url){
         url: url,
         error: function (xhr, ajaxOptions, thrownError) {
               alert("Error: " + thrownError + "Status: " + xhr.status);
-              $.unblockUI();
             },
       });
 
@@ -49,7 +48,6 @@ function peticionAjaxJSON(datos,url){
         dataType: "json",
         error: function (xhr, ajaxOptions, thrownError) {
               alert("Error: " + thrownError + "Status: " + xhr.status);
-              $.unblockUI();
             },
       });
 
