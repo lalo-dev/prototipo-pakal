@@ -9,26 +9,53 @@
 		
 		switch($vAcc)
 		{
-			case "buscarClientes":
-					guardaGraficas();
+			case "listaClientes":
+					listaClientes();
 				break;
 		}
 				
 	}
 
-
-	function sistemaUnidades(){
+	function listaClientes() {
 		global $vConn;
 
-		$vQuery = " SELECT * FROM Selection ORDER BY SelectionDate DESC LIMIT 0,1; ";
-		$vRes =  $vConn->ExecuteWithReturn($vQuery);
+		$vQuery = "SELECT nombre FROM clientes ORDER BY nombre DESC";
+		$vRes = $vConn->ExecuteWithReturn($vQuery);
 
-		/*Formando JSON Respuesta segun Selection*/
-		$vSeleccion = json_encode(array(
-						"System"    => $vRes[0]["Unit"],
-						"BladeType" => $vRes[0]["BladeType"]
-					));
+		$html = '';
 
-		echo $vSeleccion;
+		foreach ($vRes as $cliente) {
+			$html .= 	"<tr>
+							<td>
+								<div class=\"btn-toolbar\">
+									<div class=\"btn-group\">
+										<button class=\"btn btn-primary dropdown-toggle btn-sm btn-alt\" data-toggle=\"dropdown\">
+											<span class=\"caret\"></span>
+										</button>
+										<ul class=\"dropdown-menu dropdown-custom\">
+											<li>
+												<a href=\"javascript: app.mostrar('subsection','detail_customer','yes')\">
+													<i class=\"fa fa-eye pull-right\"></i>Detalle
+												</a>
+												<a href=\"javascript: app.mostrar('subsection','form_customer','yes')\">
+													<i class=\"fa fa-pencil pull-right\"></i>Editar
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+							<td>
+								<span><a href=\"javascript:void(0)\" onclick=\"$('#tblContratos,#totalContratos,#agregarContrato').show();\">".$cliente['nombre']."</a></span>
+							</td>
+							<td>
+								<label class=\"switch switch-primary\">
+									<input type=\"checkbox\" checked=\"\" /><span></span>
+								</label>
+							</td>
+						</tr>";
+		}
+
+		echo $html;
 	}
 ?>

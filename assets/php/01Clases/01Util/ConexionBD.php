@@ -5,7 +5,7 @@
 		var $host = "localhost";
 		var $userDb = "root";
 		var $passwordDb = "";
-		var $dataBaseName = "BDFLAKT";
+		var $dataBaseName = "pakaldb";
 		var $conection;
 
 		function ConectToDataBase(){

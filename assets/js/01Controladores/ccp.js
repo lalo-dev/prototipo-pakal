@@ -1,17 +1,28 @@
 $(document).ready(function() {
+	//Sección clientes
+	listaClientes();
+
+	//Sección contratos
 	
+	//Sección proyectos
 });
 
 //Sección clientes
-function listaClientes() {
-	$.when(
-		$.ajax({
-			data: "acc=listaClientes",
-			type: "POST",
-			url: "php/02Controladores/clientes.php"
-		})
-	).done(function(clientes) {
+function totalClientes() {
+	var vDatos = 'acc=totalClientes';
+	var vUrl = 'assets/php/02Controladores/ccp.php';
 
+	peticionAjax(vDatos, vUrl).done(function(vRes) {
+		$('#totalClientes').text(vRes);
+	});
+}
+
+function listaClientes() {
+	var vDatos = 'acc=listaClientes';
+	var vUrl = 'assets/php/02Controladores/ccp.php';
+
+	peticionAjax(vDatos, vUrl).done(function(vRes) {
+		$('#tblClientes >tbody').append(vRes);
 	});
 }
 
@@ -21,7 +32,7 @@ function listaContratos() {
 		$.ajax({
 			data: "acc=listaContratos",
 			type: "POST",
-			url: "php/02Controladores/clientes.php"
+			url: "assets/php/02Controladores/clientes.php"
 		})
 	).done(function(clientes) {
 
@@ -34,7 +45,7 @@ function listaProyectos() {
 		$.ajax({
 			data: "acc=listaProyectos",
 			type: "POST",
-			url: "php/02Controladores/clientes.php"
+			url: "assets/php/02Controladores/clientes.php"
 		})
 	).done(function(clientes) {
 
