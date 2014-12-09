@@ -9,18 +9,33 @@
 		
 		switch($vAcc)
 		{
+			//Clientes
+			case "ultimoCliente":
+					ultimoCliente();
+				break;
 			case "totalClientes":
 					totalClientes();
 				break;
 			case "listaClientes":
 					listaClientes();
 				break;
+			case "guardaCliente":
+					guardaCliente();
+				break;
+			case "guardaAreaCliente":
+					guardaAreaCliente();
+				break;
+			case "guardaTelefonoCliente":
+					guardaTelefonoCliente();
+				break;
+			//Contratos
 			case "totalContratos":
 					totalContratos();
 				break;
 			case "listaContratos":
 					listaContratos();
 				break;
+			//Proyectos
 			case "totalProyectos":
 					totalProyectos();
 				break;
@@ -31,7 +46,16 @@
 				
 	}
 
-	//Sección clientes             ###################################################################################
+	//##############################        Sección clientes             #############################################
+	function ultimoCliente() {
+		global $vConn;
+
+		$vQuery = "SELECT MAX(idCliente)+1 AS cliente FROM clientes LIMIT 1";
+		$vRes = $vConn->ExecuteWithReturn($vQuery);
+
+		echo $vRes[0]['cliente'];
+	}
+
 	function totalClientes() {
 		global $vConn;
 
@@ -90,7 +114,61 @@
 		echo $html;
 	}
 
-	//Sección contratos            ###################################################################################
+	function guardaCliente() {
+		global $vConn;
+
+		$nombre = $_REQUEST['nombre'];
+		$rfc    = $_REQUEST['rfc'];
+		$rs     = $_REQUEST['rs'];
+		$giro   = $_REQUEST['giro'];
+		$url    = $_REQUEST['url'];
+		$nota   = $_REQUEST['nota'];
+
+		$vQuery = "INSERT INTO clientes VALUES ('','".$nombre."','".$rfc."','".$rs."','".$giro."','".$url."','".$nota."','1')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;
+	}
+
+	function listaAreasCliente() {
+	}
+
+	function guardaAreaCliente() {
+		global $vConn;
+
+		//Eliminar las areas del cliente
+		//$vQuery = "DELETE FROM clientesareas WHERE idCliente=".$_REQUEST['cliente'];
+		//$vRes = $vConn->ExecuteWithoutReturn($vQuery);
+
+		$cliente    = $_REQUEST['cliente'];
+		$area       = $_REQUEST['area'];
+		$comentario = $_REQUEST['comentario'];
+
+		$vQuery = "INSERT INTO clientesareas VALUES ('','".$cliente."','".$area."','".$comentario."')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;
+	}
+
+	function guardaTelefonoCliente() {
+		global $vConn;
+
+		//Eliminar los telefonos del cliente
+		//$vQuery = "DELETE FROM clientestelefonos WHERE idCliente=".$_REQUEST['cliente'];
+		//$vRes = $vConn->ExecuteWithoutReturn($vQuery);
+
+		$cliente   = $_REQUEST['cliente'];
+		$telefono  = $_REQUEST['telefono'];
+		$extencion = $_REQUEST['extencion'];
+		$tipo      = $_REQUEST['tipo'];
+
+		$vQuery = "INSERT INTO clientestelefonos VALUES ('','".$cliente."','".$telefono."','".$extencion."','".$tipo."')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;	
+	}
+
+	//##############################        Sección contratos            #############################################
 	function totalContratos() {
 		global $vConn;
 
@@ -151,7 +229,7 @@
 		echo $html;
 	}
 
-	//Sección proyectos            ###################################################################################
+	//##############################        Sección proyectos            #############################################
 	function totalProyectos() {
 		global $vConn;
 

@@ -19,13 +19,54 @@ function totalClientes() {
 
 function listaClientes() {
 	var vDatos = 'acc=listaClientes';
-	var vUrl = 'assets/php/02Controladores/ccp.php';
+	var vUrl   = 'assets/php/02Controladores/ccp.php';
 
 	peticionAjax(vDatos, vUrl).done(function(vRes) {
 		$('#tblClientes > tbody > tr').remove();
 		$('#tblClientes > tbody').append(vRes);
 
 		totalClientes();
+	});
+}
+
+function guardaCliente() {
+	//alert('guardar cliente');
+	var nombre = '&nombre=' + $('#txtNombreCliente').val();
+	var rfc    = '&rfc=' + $('#txtRfcCliente').val();
+	var rs     = '&rs=' + $('#txtRsCliente').val();
+	var giro   = '&giro=' + $('#txtGiroCliente').val();
+	var url    = '&url=' + $('#txtUrlCliente').val();
+	var nota   = '&nota=' + $('#txtNotaCliente').val();
+	var vDatos = 'acc=guardaCliente'+nombre+rfc+rs+giro+url+nota;
+	var vUrl   = 'assets/php/02Controladores/ccp.php';
+	//alert(vDatos);
+
+	peticionAjax(vDatos, vUrl).done(function(vRes) {
+		if(vRes[0] == 0){
+			peticionAjax('acc=ultimoCliente', 'assets/php/02Controladores/ccp.php').done(function(cliente) {
+				guardarAreasCliente(cliente);
+				alert("Se ha guardado correctamente el cliente.");
+			});
+		} else {
+			alert("No se guardo el cliente.");
+		}
+	});
+}
+
+function guardarAreasCliente(cliente) {
+	$('.areaCliente').each(function(index) {
+		alert('entro al each');
+		var area       = '&area=' + $(this).find("td").eq(0).html();
+		var comentario = '&comentario=' + $(this).find("td").eq(1).html()
+		var vDatos     = 'acc=guardaAreaCliente&cliente='+cliente+area+comentario;
+		var vUrl       = 'assets/php/02Controladores/ccp.php';
+		alert(vDatos);
+
+		peticionAjax(vDatos, vUrl).done(function(vArea) {
+			if(vArea[0] == 1){
+				alert("No se pudo guardar las áreas del cliente.");
+			}	
+		});
 	});
 }
 
