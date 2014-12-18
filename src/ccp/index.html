@@ -182,7 +182,7 @@
 								</div>
 								<div class="form-group form-actions">
 									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
-										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarArea"><i class="fa fa-user"></i> Agregar</button>
+										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarArea" onclick="agregarTrArea();"><i class="fa fa-user"></i> Agregar</button>
 										<button class="btn btn-alt btn-sm btn-default" id="btnCancelarArea"><i class="fa fa-repeat"></i> Cancelar</button>
 									</div>
 									<div class="row">&nbsp;</div>
@@ -273,7 +273,7 @@
 								</div>
 								<div class="form-group form-actions">
 									<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px; margin-bottom: 40px;">
-										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarTelefonoCliente"><i class="fa fa-user"></i> Agregar</button>
+										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarTelefonoCliente" onclick="agregarTrTelefono()"><i class="fa fa-user"></i> Agregar</button>
 										<button class="btn btn-alt btn-sm btn-default" id="btnCancelarTelefonoCliente"><i class="fa fa-repeat"></i> Cancelar</button>
 									</div>
 									<div class="row">&nbsp;</div>
@@ -289,7 +289,7 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<tr class="telefonoCliente">
 													<td>5512121212</td>
 													<td>2345, 5423, 1223</td>
 													<td>Oficina</td>
@@ -304,7 +304,7 @@
 														</div>
 													</td>
 												</tr>
-												<tr>
+												<tr class="telefonoCliente">
 													<td>5512121212</td>
 													<td>2345, 5423, 1223</td>
 													<td>Oficina</td>
@@ -399,7 +399,7 @@
 								</div>
 								<div class="form-group form-actions">
 									<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 40px; margin-top: 40px;">
-										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarDireccionCliente"><i class="fa fa-user"></i> Agregar</button>
+										<button class="btn btn-alt btn-sm btn-primary" id="btnAgregarDireccionCliente" onclick="agregaTrDireccion()"><i class="fa fa-user"></i> Agregar</button>
 										<button class="btn btn-alt btn-sm btn-default" id="btnCancelarDireccionCliente"><i class="fa fa-repeat"></i> Cancelar</button>
 									</div>
 									<div class="row">&nbsp;</div>
@@ -419,7 +419,7 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<tr class="direccionCliente">
 													<td>[calle]</td>
 													<td>[colonia]</td>
 													<td>[delegación]</td>
@@ -438,7 +438,7 @@
 														</div>
 													</td>
 												</tr>
-												<tr>
+												<tr class="direccionCliente">
 													<td>[calle]</td>
 													<td>[colonia]</td>
 													<td>[delegación]</td>
@@ -457,7 +457,7 @@
 														</div>
 													</td>
 												</tr>
-												<tr>
+												<tr class="direccionCliente">
 													<td>[calle]</td>
 													<td>[colonia]</td>
 													<td>[delegación]</td>
@@ -571,7 +571,7 @@
 											<div class="form-group col-sm-4">
 												<label class="col-md-3 control-label">E-mail / Telefono</label>
 												<div class="col-md-9">
-													<select id="example-select" name="example-select" class="form-control" size="1">
+													<select id="slcEmailTelefono" name="slcEmailTelefono" class="form-control" size="1">
 														<option value="0">Seleccione</option>
 														<option value="1">E-mail</option>
 														<option value="2">Telefono</option>
@@ -746,18 +746,18 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<tr class="contactoCliente">
 													<td>Alfredo</td>
 													<td>Solis</td>
 													<td>Alfaro</td>
 													<td>Recursos Humanos</td>
 													<td>
-														<p>rh@cliente.com</p>
-														<p>personal@correo.com</p>
+														<p class="emailContacto">rh@cliente.com</p>
+														<p class="emailContacto">coca@correo.com</p>
 													</td>
 													<td>
-														<p>5512121212 -/- 1290 -/- Oficina</p>
-														<p>5512121212 -/- 2900 -/- Empresa</p>
+														<p class="telefonoContacto">5512121212 ~ 1290 ~ Oficina</p>
+														<p class="telefonoContacto">5512121212 ~ 2900 ~ Empresa</p>
 													</td>
 													<td class="text-center">
 														<div class="btn-group btn-group-xs">
@@ -770,18 +770,18 @@
 														</div>
 													</td>
 												</tr>
-												<tr>
+												<tr class="contactoCliente">
 													<td>Eduardo</td>
 													<td>Martínez</td>
 													<td>Martínez</td>
 													<td>Sistemas</td>
 													<td>
-														<p>personal@mail.com</p>
-														<p>oficina@mail.com</p>
+														<p class="emailContacto">personal@mail.com</p>
+														<p class="emailContacto">oficina@mail.com</p>
 													</td>
 													<td>
-														<p>5598653426 -/- 6767 -/- Oficina</p>
-														<p>5598760012 -/- 2323 -/- Empresa</p>
+														<p class="telefonoContacto">5598653426 ~ 6767 ~ Oficina</p>
+														<p class="telefonoContacto">5598760012 ~ 2323 ~ Empresa</p>
 													</td>
 													<td class="text-center">
 														<div class="btn-group btn-group-xs">
@@ -804,7 +804,7 @@
 
 					<div class="form-group form-actions">
 						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
-							<button type="button" class="btn btn-alt btn-sm btn-primary" id="btnGuardarCliente" onclick="guardaCliente();"><i class="fa fa-user"></i> Guardar</button>
+							<button type="button" class="btn btn-alt btn-sm btn-primary" id="btnGuardarCliente" onclick="guardaCliente();"><i class="fa fa-floppy-o"></i> Guardar</button>
 							<button type="button" class="btn btn-alt btn-sm btn-default" id="btnCancelarCliente"><i class="fa fa-repeat"></i> Cancelar</button>
 						</div>
 					</div>
@@ -1447,7 +1447,7 @@
 
 					<div class="form-group form-actions">
 						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
-							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
 							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
 							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
 						</div>
@@ -1839,7 +1839,7 @@
 
 					<div class="form-group form-actions">
 						<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 40px;">
-							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-user"></i> Guardar</button>
+							<button type="submit" class="btn btn-alt btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
 							<button type="reset" class="btn btn-alt btn-sm btn-default"><i class="fa fa-repeat"></i> Cancelar</button>
 							<a href="javascript: goToGeneral();" class="btn btn-alt btn-sm btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
 						</div>
@@ -2466,42 +2466,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- Section JS of admin clientes -->
-<script>
-	//links
-	app.navegarA({buttons:[
-		{
-			//supervisión
-			idComponente:'irRoadmap',
-			url:'src/roadmap'
-		},
-		{
-			idComponente:'irAntecedentes',
-			url:'src/antecedentes'
-		},
-		{
-			idComponente:'irAntecedentesp',
-			url:'src/antecedentesp'
-		},
-		{
-			idComponente:'irAseguramiento',
-			url:'src/aseguramiento'
-		},
-		{
-			idComponente:'irInventario',
-			url:'src/inventario'
-		},
-		{
-			idComponente:'irValidaciones',
-			url:'src/validaciones'
-		},
-		{
-			idComponente:'irTablero',
-			url:'src/tablero'
-		}
-	]});
-</script>
 <!-- Controlador de página -->
 <script type="text/javascript" src="assets/js/util.js" ></script>
 <script type="text/javascript" src="assets/js/01Controladores/ccp.js" ></script>

@@ -253,8 +253,8 @@
 			var rand = Math.floor((Math.random()*1234567890987654321)+1);
 			var mail = hex_md5(rand + "@mail.com");
 			var gravatar = "http://www.gravatar.com/avatar/"+ mail +"?s=64&r=pg&d=identicon";
-			$('#imgProfileSidebar, #imgProfileNavbar').attr('src', gravatar);
-
+			//$('#imgProfileSidebar, #imgProfileNavbar').attr('src', gravatar);
+			$('#imgProfileSidebar, #imgProfileNavbar').attr('src', 'avatar.jpg');
 
 			app.navegarA({buttons:[
 				{

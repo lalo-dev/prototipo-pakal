@@ -9,6 +9,7 @@
 		
 		switch($vAcc)
 		{
+			//########################################################################
 			//Clientes
 			case "ultimoCliente":
 					ultimoCliente();
@@ -28,6 +29,20 @@
 			case "guardaTelefonoCliente":
 					guardaTelefonoCliente();
 				break;
+			case "guardaDireccionCliente":
+					guardaDireccionCliente();
+				break;
+			//Clientes contacto
+			case "guardaContactoCliente":
+					guardaContactoCliente();
+				break;
+			case "guardaTelefonoContactoCliente":
+					guardaTelefonoContactoCliente();
+				break;
+			case "guardaEmailContactoCliente":
+					guardaEmailContactoCliente();
+				break;
+			//########################################################################
 			//Contratos
 			case "totalContratos":
 					totalContratos();
@@ -35,6 +50,7 @@
 			case "listaContratos":
 					listaContratos();
 				break;
+			//########################################################################
 			//Proyectos
 			case "totalProyectos":
 					totalProyectos();
@@ -50,8 +66,8 @@
 	function ultimoCliente() {
 		global $vConn;
 
-		$vQuery = "SELECT MAX(idCliente)+1 AS cliente FROM clientes LIMIT 1";
-		$vRes = $vConn->ExecuteWithReturn($vQuery);
+		$vQuery = "SELECT MAX(idCliente) AS cliente FROM clientes LIMIT 1";
+		$vRes   = $vConn->ExecuteWithReturn($vQuery);
 
 		echo $vRes[0]['cliente'];
 	}
@@ -153,10 +169,6 @@
 	function guardaTelefonoCliente() {
 		global $vConn;
 
-		//Eliminar los telefonos del cliente
-		//$vQuery = "DELETE FROM clientestelefonos WHERE idCliente=".$_REQUEST['cliente'];
-		//$vRes = $vConn->ExecuteWithoutReturn($vQuery);
-
 		$cliente   = $_REQUEST['cliente'];
 		$telefono  = $_REQUEST['telefono'];
 		$extencion = $_REQUEST['extencion'];
@@ -166,6 +178,68 @@
 		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
 
 		echo $vRes;	
+	}
+
+	function guardaDireccionCliente() {
+		global $vConn;
+
+		$cliente   = $_REQUEST['cliente'];
+		$calle     = $_REQUEST['calle'];
+		$colonia   = $_REQUEST['colonia'];
+		$municipio = $_REQUEST['municipio'];
+		$ciudad    = $_REQUEST['ciudad'];
+		$estado    = $_REQUEST['estado'];
+		$pais      = $_REQUEST['pais'];
+		$cp        = $_REQUEST['cp'];
+
+		$vQuery = "INSERT INTO clientesdirecciones VALUES ('','".$cliente."','".$calle."','".$colonia."','".$municipio."','".$ciudad."','".$estado."','".$pais."','".$cp."')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;
+	}
+
+	function guardaContactoCliente() {
+		global $vConn;
+
+		$cliente = $_REQUEST['cliente'];
+		$nombre  = $_REQUEST['nombre'];
+		$ap      = $_REQUEST['ap'];
+		$am      =$_REQUEST['am'];
+		$puesto  = $_REQUEST['puesto'];
+
+		$vQuery = "INSERT INTO contactos VALUES ('','".$cliente."','".$nombre."','".$ap."','".$am."','".$puesto."')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		$vQuery = "SELECT MAX(idContacto) AS contacto FROM contactos LIMIT 1";
+		$vRes = $vConn->ExecuteWithReturn($vQuery);
+
+		echo $vRes[0]['contacto'];
+	}
+
+	function guardaEmailContactoCliente() {
+		global $vConn;
+
+		$contacto = $_REQUEST['contactoCliente'];
+		$email    = $_REQUEST['email'];
+
+		$vQuery = "INSERT INTO contactosemails VALUES('','".$contacto."','".$email."')";
+		$vRes   = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;
+	}
+
+	function guardaTelefonoContactoCliente() {
+		global $vConn;
+
+		$contacto  = $_REQUEST['contactoCliente'];
+		$telefono  = $_REQUEST['telefono'];
+		$extencion = $_REQUEST['extencion'];
+		$tipo      = $_REQUEST['tipo'];
+
+		$vQuery = "INSERT INTO contactostelefonos VALUES ('','".$contacto."','".$telefono."','".$extencion."','".$tipo."')";
+		$vRes = $vConn->ExecuteWithoutReturn($vQuery);
+
+		echo $vRes;
 	}
 
 	//##############################        Sección contratos            #############################################
@@ -299,7 +373,42 @@
 									<input type=\"checkbox\" checked=\"\" /><span></span>
 								</label>
 							</td>
-						</tr>";
+						</tr>
+						<!-- Section JS of admin clientes -->
+						<script>
+							app.navegarA({buttons:[
+								{
+									//supervisión
+									idComponente:'irRoadmap',
+									url:'src/roadmap'
+								},
+								{
+									idComponente:'irAntecedentes',
+									url:'src/antecedentes'
+								},
+								{
+									idComponente:'irAntecedentesp',
+									url:'src/antecedentesp'
+								},
+								{
+									idComponente:'irAseguramiento',
+									url:'src/aseguramiento'
+								},
+								{
+									idComponente:'irInventario',
+									url:'src/inventario'
+								},
+								{
+									idComponente:'irValidaciones',
+									url:'src/validaciones'
+								},
+								{
+									idComponente:'irTablero',
+									url:'src/tablero'
+								}
+							]});
+						</script>
+						";
 		}
 
 		echo $html;
